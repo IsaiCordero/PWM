@@ -1,0 +1,10 @@
+p {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+#Pectoral {
+    top: 116px;
+    left: 114px;
+    position: absolute;
+}
