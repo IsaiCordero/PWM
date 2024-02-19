@@ -3,8 +3,30 @@ p {
     color: black;
     font-weight: bold;
 }
-#Pectoral {
-    top: 116px;
-    left: 114px;
+.Exercises{
+    font-size: 40px;
+    top: 20px;
+    left: 212px;
     position: absolute;
 }
+.Pectoral {
+    top: 116px;
+    left: 100px;
+    position: absolute;
+}
+.Espalda {
+    top: 116px;
+    left: 200px;
+    position: absolute;
+}
+.Isquiotibial {
+    top: 116px;
+    left: 300px;
+    position: absolute;
+}
+.Triceps{
+    top: 116px;
+    left: 425px;
+    position: absolute;
+}
+
