@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Bricolage Grotesque, serif;
+    font-weight: 700;
+    line-height: 150%;
+
+
+
+}
+.logo {
+    color: #222684;
+    text-transform: uppercase;
+}
