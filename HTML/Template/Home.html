@@ -3,6 +3,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
+        <script src="xlu-include-file.js"></script>
         <title>GymDiary</title>   
     </head>
     <body>
@@ -41,12 +42,12 @@
                 <p>Text above common questions</p>
             </div>
 
-            <div class="container2">
-                <h3 class = "question">Some question</h3>
-                <p class="response">Some response</p>
-            </div>
+            <div xlu-include-file="question.html"></div>
+            <div xlu-include-file="question.html"></div>
+
 
         </div>
 
+        <div xlu-include-file="footer.html"></div>
     </body>
 </html>
