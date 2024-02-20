@@ -5,7 +5,7 @@ p {
 }
 .Exercises{
     font-size: 40px;
-    top: 130px;
+    top: 115px;
     left: 575px;
     position: absolute;
 }
@@ -37,9 +37,9 @@ p {
     position: absolute;
 }
 .IsquioImagen{
-    width: 100px;
-    top: 190px;
-    left: 750px;
+    width: 115px;
+    top: 175px;
+    left: 740px;
     position: absolute;
 }
 .Triceps{
@@ -48,9 +48,9 @@ p {
     position: absolute;
 }
 .TricepsImagen{
-    width: 150px;
+    width: 160px;
     top: 175px;
-    right: 175px;
+    right: 170px;
     position: absolute;
 }
 .Biceps{
@@ -77,12 +77,24 @@ p {
 }
 .Cuadriceps{
     top: 540px;
-    left: 725px;
+    left: 730px;
+    position: absolute;
+}
+.CuadricepsImagen{
+    width: 115px;
+    top: 390px;
+    left: 745px;
     position: absolute;
 }
 .Gemelos{
     top: 540px;
-    right: 200px;
+    right: 190px;
+    position: absolute;
+}
+.GemeloImagen{
+    width: 160px;
+    top: 390px;
+    right: 165px;
     position: absolute;
 }
 
