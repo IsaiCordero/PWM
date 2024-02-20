@@ -10,8 +10,14 @@ p {
     position: absolute;
 }
 .Pectoral {
-    top: 116px;
+    top: 200px;
     left: 100px;
+    position: absolute;
+}
+.PectoralImagen{
+    width: 125px;
+    top: 116px;
+    left: 85px;
     position: absolute;
 }
 .Espalda {
