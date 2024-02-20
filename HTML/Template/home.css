@@ -38,6 +38,7 @@ nav a{
     margin: 2em;
     display: flex;
     justify-content: space-between;
+
 }
 
 button {
@@ -55,13 +56,12 @@ button {
     color: #080A45;
 }
 
-.title {
+.title_home {
     color: black;
     font-size: 48px;
     text-align: center;
     font-family: Bricolage Grotesque, serif;
 }
 .mid_home {
-    display: inline-block;
-
+    align-items: center;
 }
