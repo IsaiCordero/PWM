@@ -54,3 +54,14 @@ button {
     background: white;
     color: #080A45;
 }
+
+.title {
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    font-family: Bricolage Grotesque, serif;
+}
+.mid_home {
+    display: inline-block;
+
+}
