@@ -1,38 +1,77 @@
 p {
-    font-size: 20px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
 }
 .Exercises{
     font-size: 40px;
-    top: 20px;
-    left: 212px;
+    top: 130px;
+    left: 575px;
     position: absolute;
 }
 .Pectoral {
-    top: 200px;
-    left: 100px;
-    position: absolute;
-}
-.PectoralImagen{
-    width: 125px;
-    top: 116px;
-    left: 85px;
-    position: absolute;
-}
-.Espalda {
-    top: 116px;
+    top: 320px;
     left: 200px;
     position: absolute;
 }
+.PectoralImagen{
+    width: 175px;
+    top: 175px;
+    left: 175px;
+    position: absolute;
+}
+.Espalda {
+    top: 320px;
+    left: 475px;
+    position: absolute;
+}
+.EspaldaImagen{
+    width: 150px;
+    top: 175px;
+    left: 455px;
+    position: absolute;
+}
 .Isquiotibial {
-    top: 116px;
-    left: 300px;
+    top: 320px;
+    left: 725px;
+    position: absolute;
+}
+.IsquioImagen{
+    width: 100px;
+    top: 190px;
+    left: 750px;
     position: absolute;
 }
 .Triceps{
-    top: 116px;
-    left: 425px;
+    top: 320px;
+    right: 200px;
+    position: absolute;
+}
+.TricepsImagen{
+    width: 150px;
+    top: 175px;
+    right: 175px;
+    position: absolute;
+}
+.Biceps{
+    top: 540px;
+    left: 200px;
+    position: absolute;
+}
+
+.Hombros{
+    top: 540px;
+    left: 475px;
+    position: absolute;
+}
+.Cuadriceps{
+    top: 540px;
+    left: 725px;
+    position: absolute;
+}
+.Gemelos{
+    top: 540px;
+    right: 200px;
     position: absolute;
 }
 
