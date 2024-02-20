@@ -55,13 +55,24 @@ p {
 }
 .Biceps{
     top: 540px;
-    left: 200px;
+    left: 210px;
     position: absolute;
 }
-
+.BicepsImagen{
+    width: 175px;
+    top: 390px;
+    left: 170px;
+    position: absolute;
+}
 .Hombros{
     top: 540px;
-    left: 475px;
+    left: 470px;
+    position: absolute;
+}
+.HombrosImagen{
+    width: 145px;
+    top: 390px;
+    left: 465px;
     position: absolute;
 }
 .Cuadriceps{
