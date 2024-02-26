@@ -1,0 +1,9 @@
+.name{
+    left: 425px;
+    top: 50px;
+    position: absolute;
+}
+.fa-bars{
+    width: 100px;
+    position: absolute;
+}

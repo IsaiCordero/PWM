@@ -3,95 +3,95 @@ p {
     color: black;
     font-weight: bold;
 }
-.Exercises{
+.exercises{
     font-size: 40px;
     top: 115px;
     left: 575px;
     position: absolute;
 }
-.Pectoral {
+.pectoral {
     top: 320px;
     left: 200px;
     position: absolute;
 }
-.PectoralImagen{
+.pectoralImagen{
     width: 175px;
     top: 175px;
     left: 175px;
     position: absolute;
 }
-.Espalda {
+.espalda {
     top: 320px;
     left: 475px;
     position: absolute;
 }
-.EspaldaImagen{
+.espaldaImagen{
     width: 150px;
     top: 175px;
     left: 455px;
     position: absolute;
 }
-.Isquiotibial {
+.isquiotibial {
     top: 320px;
     left: 725px;
     position: absolute;
 }
-.IsquioImagen{
+.isquioImagen{
     width: 115px;
     top: 175px;
     left: 740px;
     position: absolute;
 }
-.Triceps{
+.triceps{
     top: 320px;
     right: 200px;
     position: absolute;
 }
-.TricepsImagen{
+.tricepsImagen{
     width: 160px;
     top: 175px;
     right: 170px;
     position: absolute;
 }
-.Biceps{
+.biceps{
     top: 540px;
     left: 210px;
     position: absolute;
 }
-.BicepsImagen{
+.bicepsImagen{
     width: 175px;
     top: 390px;
     left: 170px;
     position: absolute;
 }
-.Hombros{
+.hombros{
     top: 540px;
     left: 470px;
     position: absolute;
 }
-.HombrosImagen{
+.hombrosImagen{
     width: 145px;
     top: 390px;
     left: 465px;
     position: absolute;
 }
-.Cuadriceps{
+.cuadriceps{
     top: 540px;
     left: 730px;
     position: absolute;
 }
-.CuadricepsImagen{
+.cuadricepsImagen{
     width: 115px;
     top: 390px;
     left: 745px;
     position: absolute;
 }
-.Gemelos{
+.gemelos{
     top: 540px;
     right: 190px;
     position: absolute;
 }
-.GemeloImagen{
+.gemeloImagen{
     width: 160px;
     top: 390px;
     right: 165px;
