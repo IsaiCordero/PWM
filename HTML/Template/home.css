@@ -17,11 +17,6 @@ h1 {
 }
 
 
-.specification {
-    margin-top: 50px;
-    background-color: #F1DDD9;
-}
-
 }
 .logo {
     color: #080A45;
@@ -89,5 +84,41 @@ button {
 }
 .mid_home {
     margin-top: 100px;
+    text-align: center;
+}
+
+.specification{
+    margin-top: 100px ;
+    background-color: #F1DDD9;
+    text-align: center;
+}
+.box-spec {
+    padding: 64px 48px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.sp1, .sp2, .sp3, .sp4 {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.sp2 {
+    background-color: rgb(216,202,200,0.5);
+}
+.sp4 {
+    background-color: rgb(216,202,200,0.5);
+}
+
+.foot {
+    margin-top: 100px;
+}
+
+.logo-footer {
+    color: #080A45;
+    text-transform: uppercase;
     text-align: center;
 }
