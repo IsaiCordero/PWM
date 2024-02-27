@@ -2,24 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../../CSS/landingPage.css">
     <script src="xlu-include-file.js"></script>
     <title>Login</title>
 </head>
-<body>
-<div>
-    <header class = "header">
-        <div xlu-include-file="header.html"></div>
-        <div xlu-include-file="nav.html"></div>
-        <button class = "button-filled login_register" onclick="window.location.href='Register.html'">Register</button>
-    </header>
-
+    <body>
     <div>
-        <h1>Login</h1>
-        <button class="no-filled" onclick="window.location.href='Login.html'">Don´t have an account</button>
-        <button class = "button-filled" onclick="window.location.href='Register.html'">Already have an account</button>
+        <header class = "header">
+            <div xlu-include-file="header.html"></div>
+            <div xlu-include-file="nav.html"></div>
+            <button class = "button-filled login_register" onclick="window.location.href='Register.html'">Register</button>
+        </header>
 
+        <div class = "title_login">
+            <h1>Login</h1>
+            <div class = "having_account">
+                <button class="no-filled" onclick="window.location.href='Login.html'">Don´t have an account</button>
+                <button class = "button-filled" onclick="window.location.href='Register.html'">Already have an account</button>
+
+            </div>
+
+        </div>
     </div>
-</div>
-</body>
+    <div class = "form_login">
+        <form>
+            <div class="email">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br>
+            </div>
+
+        </form>
+    </div>
+
+    </body>
 </html>
