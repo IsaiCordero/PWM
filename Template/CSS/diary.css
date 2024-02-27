@@ -3,7 +3,111 @@
     top: 50px;
     position: absolute;
 }
-.fa-bars{
-    width: 100px;
+.day1Bars{
+    top: 125px;
+    left: 90px;
+    position: absolute;
+}
+.day1Circle{
+    top: 115px;
+    left: 140px;
+    color: black;
+    position: absolute;
+}
+.day1{
+    font-size: 20px;
+    top: 130px;
+    left: 210px;
+    position: absolute;
+}
+.day1Exercises{
+    font-size: 20px;
+    top: 130px;
+    right: 100px;
+    position: absolute;
+}
+.day2Bars{
+    top: 195px;
+    left: 90px;
+    position: absolute;
+}
+.day2Circle{
+    top: 185px;
+    left: 140px;
+    color: black;
+    position: absolute;
+}
+.day2{
+    font-size: 20px;
+    top: 200px;
+    left: 210px;
+    position: absolute;
+}
+.day2Exercises{
+    font-size: 20px;
+    top: 200px;
+    right: 100px;
+    position: absolute;
+}
+.day3Bars{
+    top: 265px;
+    left: 90px;
+    position: absolute;
+}
+.day3Circle{
+    top: 255px;
+    left: 140px;
+    color: black;
+    position: absolute;
+}
+.day3{
+    font-size: 20px;
+    top: 270px;
+    left: 210px;
+    position: absolute;
+}
+.day3Exercises{
+    font-size: 20px;
+    top: 270px;
+    right: 100px;
+    position: absolute;
+}
+.newDayCircle{
+    top: 335px;
+    left: 140px;
+    color: black;
+    position: absolute;
+}
+.newDayText{
+    font-size: 20px;
+    top: 347px;
+    left: 210px;
+    position: absolute;
+}
+.newDay{
+    margin-top: 100px;
+    background-color: #F1DDD9;
+    text-align: center;
+}
+.weekPlan{
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+    top: 420px;
+    left: 580px;
+    position: absolute;
+}
+.mondaytext{
+    font-size: 20px;
+    top: 480px;
+    left: 100px;
+    font-weight: bold;
+    position: absolute;
+}
+.excerciseMonday{
+    font-size: 15px;
+    top: 520px;
+    left: 107px;
+    font-weight: bold;
     position: absolute;
 }
