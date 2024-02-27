@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    margin-top: 0px;
 }
 
 h1 {
@@ -24,6 +25,9 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .login_register {
@@ -31,6 +35,9 @@ h1 {
     top: 0;
     right: 0;
     margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav {
@@ -60,6 +67,9 @@ nav a{
     align-items: center;
     padding: 10px;
     justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 button {
@@ -122,4 +132,29 @@ button {
     color: #080A45;
     text-transform: uppercase;
     text-align: center;
+}
+
+.title_login {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.having_account{
+    margin-top: 50px;
+}
+
+.form_login {
+    margin-top: 50px;
+    background-color: #F1DDD9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+.password {
+    margin-top: 40px;
 }
