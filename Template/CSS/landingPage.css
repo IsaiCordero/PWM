@@ -86,6 +86,10 @@ button {
     background: white;
     color: #080A45;
 }
+label {
+    line-height: 30px;
+    border-radius: 5px;
+}
 .button-login {
     margin: 0 auto;
     margin-top: 40px;
