@@ -86,6 +86,13 @@ button {
     background: white;
     color: #080A45;
 }
+.button-login {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 40px;
+}
 
 .title_home {
     color: black;
@@ -154,6 +161,9 @@ button {
 label {
     margin-bottom: 30px;
     margin-top: 8px;
+}
+.email {
+    margin-top: 40px;
 }
 .password {
     margin-top: 40px;
