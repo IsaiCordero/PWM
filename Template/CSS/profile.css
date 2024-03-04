@@ -1,4 +1,28 @@
 body{
-    margin:0px;
+    margin:0;
+}
+
+.userInformation{
+    width: 100%;
+    height: 386px;
+    margin: auto;
+}
+
+.profilePicButton{
+    float: left; /* Adjust the container to the left*/
+    width: 386px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePic{
+    width: 250px; /* Ancho de la imagen */
+    height: 250px; /* Altura de la imagen */
+    justify-content: center;
+}
+
+.changePicButton{
+    text-align: center;
 }
 

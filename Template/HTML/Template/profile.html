@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../CSS/landingPage.css">
+    <link rel="stylesheet" href="../../CSS/profile.css">
     <script src="xlu-include-file.js"></script>
     <title>User Profile</title>
 </head>
@@ -12,23 +13,46 @@
         <div xlu-include-file="nav.html"></div>
         <div xlu-include-file="buttonLoginRegister.html"></div>
     </header>
-    <main class="main_container">
-        <div class="profile_pic">
-            <img src="../../images/User%20Icon%20Profile.png" alt = "Profile picture">
-            <button class="change_pic_button">
+    <main class="mainContainer">
+        <div class="profilePicButton">
+            <img class="profilePic"
+                 src="../../images/User%20Icon%20Profile.png"
+                 alt = "Profile picture">
+            <button class="changePicButton">
                 Change Profile Pic
             </button>
         </div>
-        <div class="user_information">
-            <h1 class="profile_title">
+        <div class="userInformation">
+            <h1 class="profileTitle">
                 Name Surname Surname
             </h1>
-            <ul class="user_complexion_list">
+            <ul class="userComplexionList">
                 <li>Male/Female/Other</li>
                 <li>1,80m/5'11</li>
                 <li>85kg/187lbs</li>
                 <li>23/01/01 (23)</li>
             </ul>
+        </div>
+        <div class="userEmail">
+            <h3 class="defaultHeader3">
+                Email
+            </h3>
+            <label for="userEmail">
+                <input id="userEmail" type="email">
+            </label>
+
+        </div>
+
+        <div class="changePassword">
+            <form>
+                <h3 class="defaultHeader3">
+                    Change Password
+                </h3>
+                <label for="newPassword"> New Password </label>
+                <input type="password" id="newPassword"><br>
+                <label for="confirmPassword"> Confirm Password </label>
+                <input type="password" id="confirmPassword">
+            </form>
         </div>
     </main>
 </body>
