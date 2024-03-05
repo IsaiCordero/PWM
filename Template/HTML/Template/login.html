@@ -17,8 +17,8 @@
         <div class = "title_login">
             <h1>Login</h1>
             <div class = "having_account">
-                <button class="no-filled" onclick="window.location.href='Login.html'">Don´t have an account</button>
-                <button class = "button-filled" onclick="window.location.href='Register.html'">Already have an account</button>
+                <button class="no-filled" onclick="window.location.href='Register.html'">Don´t have an account</button>
+                <button class = "button-filled" onclick="window.location.href='Login.html'">Already have an account</button>
 
             </div>
 
@@ -28,15 +28,21 @@
         <form>
             <div class="email">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email"  placeholder="Write your email" required ><br>
             </div>
 
             <div class="password">
                 <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" required><br>
+                <input type="password" id="password" name="password" placeholder="Write your password" required><br>
             </div>
 
         </form>
+
+        <button class="button-filled button-login">Login</button>
+    </div>
+
+    <div class = "foot">
+        <div xlu-include-file="footer.html"></div>
     </div>
 
     </body>

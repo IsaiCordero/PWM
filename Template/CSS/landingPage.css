@@ -86,7 +86,56 @@ button {
     background: white;
     color: #080A45;
 }
+label {
+    line-height: 30px;
+    border-radius: 5px;
+}
+.bold {
+    font-weight: bold;
+}
 
+.button-login {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 40px;
+}
+.sets {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-bottom: 20px;
+}
+.repsSet {
+    position: relative;
+    margin-left: 50px;
+
+}
+.imageExerciseByMuscle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+.dayAndExercise {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restTime {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setsExerciseMuscle{
+    display: flex;
+    flex-direction: column;
+
+}
 .title_home {
     color: black;
     font-size: 48px;
@@ -123,9 +172,23 @@ button {
 .sp4 {
     background-color: rgb(216,202,200,0.5);
 }
-
+footer{
+    position: relative;
+    bottom: 0;
+    align-items: center;
+}
 .foot {
     margin-top: 100px;
+
+}
+
+.logoNav{
+    margin: 0 auto;
+    text-align: center;
+}
+.reservedGym {
+    position: absolute;
+    left: 0;
 }
 
 .logo-footer {
@@ -154,6 +217,9 @@ button {
 label {
     margin-bottom: 30px;
     margin-top: 8px;
+}
+.email {
+    margin-top: 40px;
 }
 .password {
     margin-top: 40px;

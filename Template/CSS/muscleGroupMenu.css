@@ -1,100 +1,124 @@
-p {
+* {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.divExercises p {
     font-size: 30px;
     color: black;
     font-weight: bold;
 }
+.divExercises {
+    padding: 64px 48px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exercises .pectoral .pectoralImagen .espalda .espaldaImagen .isquiotibial .isquioImagen .triceps .tricepsImagen
+.biceps .bicepsImagen .hombros .hombrosImagen .cuadriceps .cuadricepsImagen .gemelos .gemeloImagen {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+/*
 .exercises{
     font-size: 40px;
     top: 115px;
     left: 575px;
-    position: absolute;
+    position: fixed;
 }
 .pectoral {
     top: 320px;
     left: 200px;
-    position: absolute;
+    position: fixed;
 }
 .pectoralImagen{
     width: 175px;
     top: 175px;
     left: 175px;
-    position: absolute;
+    position: fixed;
 }
 .espalda {
     top: 320px;
     left: 475px;
-    position: absolute;
+    position: fixed;
 }
 .espaldaImagen{
     width: 150px;
     top: 175px;
     left: 455px;
-    position: absolute;
+    position: fixed;
 }
 .isquiotibial {
     top: 320px;
     left: 725px;
-    position: absolute;
+    position: fixed;
 }
 .isquioImagen{
     width: 115px;
     top: 175px;
     left: 740px;
-    position: absolute;
+    position: fixed;
 }
 .triceps{
     top: 320px;
     right: 200px;
-    position: absolute;
+    position: fixed;
 }
 .tricepsImagen{
     width: 160px;
     top: 175px;
     right: 170px;
-    position: absolute;
+    position: fixed;
 }
 .biceps{
     top: 540px;
     left: 210px;
-    position: absolute;
+    position: fixed;
 }
 .bicepsImagen{
     width: 175px;
     top: 390px;
     left: 170px;
-    position: absolute;
+    position: fixed;
 }
 .hombros{
     top: 540px;
     left: 470px;
-    position: absolute;
+    position: fixed;
 }
 .hombrosImagen{
     width: 145px;
     top: 390px;
     left: 465px;
-    position: absolute;
+    position: fixed;
 }
 .cuadriceps{
     top: 540px;
     left: 730px;
-    position: absolute;
+    position: fixed;
 }
 .cuadricepsImagen{
     width: 115px;
     top: 390px;
     left: 745px;
-    position: absolute;
+    position: fixed;
 }
 .gemelos{
     top: 540px;
     right: 190px;
-    position: absolute;
+    position: fixed;
 }
 .gemeloImagen{
     width: 160px;
     top: 390px;
     right: 165px;
-    position: absolute;
+    position: fixed;
 }
+*/
+
+
 
