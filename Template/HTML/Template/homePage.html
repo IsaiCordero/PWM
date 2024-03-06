@@ -19,14 +19,61 @@
     </header>
     <main>
         <header class="mainHeader">
-            <h1>
+            <h1 id="homePageTitle">
                 Welcome Message, Name Surname
             </h1>
         </header>
         <!-- Section of motivational speech-->
-        <section>
+        <section id="motivationalSpeech">
             This is an example of motivational speech that will change once the user logs into the web
         </section>
+        <!--Preguntar si article o section-->
+        <article class="mainUserArea">
+            <section class="todaysWorkout" onclick="window.location.href='diary.html'">
+                <header>
+                    <h2 class="defaultH2">
+                        Today's workout
+                    </h2>
+                </header>
+                <div class="userContentArea">
+                    <figure id="todaysWorkoutImage">
+                        <img src="../../images/pectoral.png">
+                        <figcaption class="defaultCaption">Chest workout (example)</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="yourProgress" onclick="window.location.href='progress.html'")>
+                <header>
+                    <h2 class="defaultH2">
+                        Your progress
+                    </h2>
+                </header>
+                <div class="userContentArea">
+                    <figure class="progressImage">
+                        <img src="../../images/defaultImage.png">
+                        <figcaption class="defaultCaption">Progress graphic 1</figcaption>
+                    </figure>
+                    <figure class="progressImage">
+                        <img src="../../images/defaultImage.png">
+                        <figcaption class="defaultCaption">Progress graphic 2</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="yourExercises" onclick="window.location.href='exercisesByMuscle.html'">
+                <header>
+                    <h3 class="defaultH3">
+                        Your Exercises
+                    </h3>
+                </header>
+            </section>
+            <section class="yourWorkouts" onclick="window.location.href='diary.html'">
+                <header>
+                    <h3 class="defaultH3">
+                        Your Workouts
+                    </h3>
+                </header>
+            </section>
+        </article>
     </main>
 </body>
 </html>
