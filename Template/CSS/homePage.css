@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family: Bricolage Grotesque, serif;
+}
+
+.logOutContainer{
+    position: relative;
+    left: 32%;
+    float: right;
+}
+
+.mainHeader{
+    width: 100%;
+    height: 150px;
+    background-image: url("Template/images/gymImage5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
