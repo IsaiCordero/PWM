@@ -1,28 +1,39 @@
-.days {
 
-}
 .day1, .day2, .day3, .newDay{
-    margin-top: 30px;
+    margin-top: 1.5em;
     position: relative;
     font-size: 20px;
 }
 .day1Text,.day1Exercises,.day2Text,.day2Exercises,.day3Text,.day3Exercises,.newDayText{
     font-size: 20px;
     position: absolute;
-
 }
-.day1Circle, .day2Circle, .day3Circle, .newDayCircle{
+.newDayCircle{
     font-size: 25px;
     color: black;
-
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    margin-left: 1.3em;
 }
-.day1Text, .day2Text, .day3Text, .newDayText{
-    left: 210px;
-    top: 15px;
+.day1Circle, .day2Circle, .day3Circle{
+    font-size: 25px;
+    color: black;
+}
+.day1Bars, .day2Bars, .day3Bars{
+    font-size: 15px;
+    margin-left: 1em;
+}
+.day1Text, .day2Text, .day3Text{
+    left: 8em;
+    top: 1em;
+}
+.newDayText{
+    left: 8em;
+    top: 1.5em;
 }
 .day1Exercises, .day2Exercises, .day3Exercises{
-    right: 100px;
-    top: 15px;
+    right: 5em;
+    top: 1em;
 }
 .newDay{
     background-color: #F1DDD9;
@@ -31,7 +42,7 @@
     font-size: 25px;
     color: darkblue;
     font-weight: bold;
-    top: 19em;
+    top: 20em;
     left: 43%;
     position: absolute;
 }
@@ -44,7 +55,7 @@
 }
 .divWeekPlan img {
     max-width: 90%;
-    height: 70%;
+    height: 60%;
     justify-content: space-between;
     display: block;
     margin: 0 auto;
