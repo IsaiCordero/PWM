@@ -1,3 +1,13 @@
+.header {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .name{
     left: 425px;
     top: 50px;
@@ -93,148 +103,36 @@
     font-size: 20px;
     color: darkblue;
     font-weight: bold;
-    top: 420px;
-    left: 580px;
+    top: 70%;
+    left: 45%;
     position: absolute;
 }
-.mondaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 110px;
-    font-weight: bold;
-    position: absolute;
+.divWeekPlan {
+    padding: 64px 48px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
-.excerciseMonday{
-    font-size: 15px;
-    top: 520px;
-    left: 117px;
-    font-weight: bold;
-    position: absolute;
+.divWeekPlan img {
+    max-width: 90%;
+    height: 70%;
+    justify-content: space-between;
+    display: flex;
+    flex-basis: 10%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
-.imageMonday{
-    top: 550px;
-    left: 85px;
-    width: 120px;
-    position: absolute;
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    margin-top: 200px;
+    flex-basis: 10%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-color: black;
 }
-.tuesdaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 270px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseTuesday{
-    font-size: 15px;
-    top: 520px;
-    left: 277px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageTuesday{
-    top: 550px;
-    left: 245px;
-    width: 120px;
-    position: absolute;
-
-}
-.wednesdaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 430px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseWednesday{
-    font-size: 15px;
-    top: 520px;
-    left: 445px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageWednesday{
-    top: 550px;
-    left: 415px;
-    width: 120px;
-    position: absolute;
-}
-.thursdaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 605px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseThursday{
-    font-size: 15px;
-    top: 520px;
-    left: 617px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageThursday{
-    top: 550px;
-    left: 585px;
-    width: 120px;
-    position: absolute;
-}
-.fridaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 780px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseFriday{
-    font-size: 15px;
-    top: 520px;
-    left: 779px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageFriday{
-    top: 550px;
-    left: 750px;
-    width: 120px;
-    position: absolute;
-}
-.saturdaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 915px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseSaturday{
-    font-size: 15px;
-    top: 520px;
-    left: 925px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageSaturday{
-    top: 550px;
-    left: 895px;
-    width: 120px;
-    position: absolute;
-}
-.sundaytext{
-    font-size: 20px;
-    top: 480px;
-    left: 1080px;
-    font-weight: bold;
-    position: absolute;
-}
-.excerciseSunday{
-    font-size: 15px;
-    top: 520px;
-    left: 1083px;
-    font-weight: bold;
-    position: absolute;
-}
-.imageSunnday{
-    top: 550px;
-    left: 1045px;
-    width: 120px;
-    position: absolute;
-}
+.foot {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 0px;
+ }
