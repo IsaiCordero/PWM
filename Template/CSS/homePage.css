@@ -3,6 +3,9 @@ body{
     font-family: Bricolage Grotesque, Arial;
 }
 
+header{
+    font-family: Bricolage Grotesque, Arial;
+}
 .logOutContainer{
     position: relative;
     left: 32%;
