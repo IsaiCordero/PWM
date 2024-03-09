@@ -60,6 +60,7 @@ li{
 }
 
 .changePassword{
+    margin-top: 30px;
     margin-left: 170px;
     max-width: 100%;
 }
@@ -73,7 +74,12 @@ li{
 }
 
 label {
-    display: block;
+    margin-left: 30px;
+}
+
+.logOut {
+    margin-left: 50px;
+
 }
 
 
