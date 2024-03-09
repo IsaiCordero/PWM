@@ -2,26 +2,27 @@
 .day1, .day2, .day3, .newDay{
     margin-top: 1.5em;
     position: relative;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 .day1Text,.day1Exercises,.day2Text,.day2Exercises,.day3Text,.day3Exercises,.newDayText{
-    font-size: 20px;
+    font-size: 1em;
     position: absolute;
 }
 .newDayCircle{
-    font-size: 25px;
+    font-size: 2em;
     color: black;
     margin-top: 0.1em;
     margin-bottom: 0.2em;
     margin-left: 1.3em;
 }
 .day1Circle, .day2Circle, .day3Circle{
-    font-size: 25px;
+    font-size: 1em;
     color: black;
 }
 .day1Bars, .day2Bars, .day3Bars{
-    font-size: 15px;
+    font-size: 0.5em;
     margin-left: 1em;
+
 }
 .day1Text, .day2Text, .day3Text{
     left: 8em;
@@ -39,40 +40,40 @@
     background-color: #F1DDD9;
 }
 .weekPlan{
-    font-size: 25px;
+    font-size: 1.55em;
     color: darkblue;
     font-weight: bold;
-    top: 20em;
+    top: 18em;
     left: 43%;
     position: absolute;
 }
 .divWeekPlan {
-    padding: 64px 48px;
+    padding: 3.5em 3em;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     border-color: black;
 }
 .divWeekPlan img {
-    max-width: 90%;
-    height: 60%;
+    max-width: 10em;
+    height: 4em;
     justify-content: space-between;
     display: block;
     margin: 0 auto;
-    flex-basis: 10%;
+    flex-basis: 1em;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
 
-    flex-basis: 10%;
+    flex-basis: 5em;
     box-sizing: content-box;
-    padding: 23px;
+    padding: 1.55em;
     border-style: solid;
     border-color: black;
-    border-radius: 10%;
+    border-radius: 0.5em;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .wednesday{
     background-color: rgba(201, 184, 249, 0.69);
