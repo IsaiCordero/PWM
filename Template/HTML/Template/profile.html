@@ -10,63 +10,33 @@
 <body>
     <header class="header" xlu-include-file="header.html">
     </header>
-    <main class="mainContainer">
-        <div class="userInformation">
-            <div class="profilePicAndButtonContainer">
-                <div class="profilePicContainer">
-                    <img class="profilePic"
-                         src="../../images/User%20Icon%20Profile.png"
-                         alt = "Profile picture">
-                </div>
-                <div class="changePicButtonContainer">
+    <main class="profileMainContent">
+        <section class="userProfile">
+            <figure class="profileImgContainer">
+                <img id="profilePicture" src="../../images/User%20Icon%20Profile.png" alt="Profile Picture">
+                <figcaption id="changeProfilePicButton">
                     <button class="button-filled">
-                        Change Profile Pic
+                        Change Pic
                     </button>
-
-                    <button class=" logOut button-filled">Log Out</button>
-
-                </div>
-            </div>
-            <div class="userPersonalData">
-                <h1 class="profileTitle">
-                    Name Surname Surname
-                </h1>
-                <ul class="userComplexionList">
-                    <li>Male/Female/Other</li>
-                    <li>1,80m/5'11</li>
-                    <li>85kg/187lbs</li>
-                    <li>23/01/01 (23)</li>
-                </ul>
-            </div>
-        </div>
-        <div class="userEmail">
-            <h3 class="defaultHeader3">
-                Email
-            </h3>
-            <label for="userEmail">
-                <input id="userEmail" type="email" value="user@email.com">
-            </label>
-
-        </div>
-
-        <div class="changePassword">
-            <form class="defaultForm">
-                <h3 class="defaultHeader3">
-                    Change Password
-                </h3>
-                <div class="defaultLabelInputContainer">
-                    <label for="newPassword"> New Password </label>
-                    <input type="password" id="newPassword">
-                </div>
-                <div class="defaultLabelInputContainer">
-                    <label for="confirmPassword"> Confirm Password </label>
-                    <input type="password" id="confirmPassword">
-                    <button class="no-filled">Change Password</button>
-                </div>
-            </form>
-        </div>
-
-
+                </figcaption>
+            </figure>
+            <section class="userImportantData">
+                <header id="profileHeader">
+                    <h1 class="defaultH1">
+                        Name Surname Surname
+                    </h1>
+                </header>
+                <section id="userComplexionData">
+                    <ul class="userComplexionList">
+                        <li>Male/Female/Other</li>
+                        <li>1,80m/5'11</li>
+                        <li>85kg/187lbs</li>
+                        <li>23/01/01 (23)</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
     </main>
+    <footer xlu-include-file="footer.html"></footer>
 </body>
 </html>

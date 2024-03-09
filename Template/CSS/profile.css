@@ -1,85 +1,65 @@
+*{
+    font-family: Bricolage Grotesque, Arial;
+}
 body{
-    font-family: Bricolage Grotesque, serif;
     margin:0;
 }
 
-.mainContainer{
-}
 
-.userInformation{
+.profileMainContent{
+    width: 100%;
     display: flex;
-    margin: 50px 50px 50px 100px;
+    flex-direction: column;
 }
 
-.userPersonalData{
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 15px 15px 15px 15px;
-    width: 40%;
-}
-
-.profilePicAndButtonContainer{
-    width: 386px;
-    height: 100%;
-}
-
-.profilePic{
-    /* Centering the image with display and margin */
-    display: block;
-    margin: auto;
-    width: 250px; /* Ancho de la imagen */
-    height: 250px; /* Altura de la imagen */
-}
-
-.changePicButtonContainer{
-    margin-top: 5px;
+.profileImgContainer{
+    float: left;    /* Make it the left column */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /*Align horizontally*/
+    align-items: center; /*Align vertically*/
+    margin: 2em;
+    width: 33%;
+    border-right: 0.1em solid #cccc
 }
 
-.profileTitle{
-    font-size: 40px;
-    margin-left: 20px;
+#profilePicture{
+    padding: 1em;
+    width: 23em;
+    height: 23em;
+}
+
+
+.userImportantData{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+#profileHeader{
+    width: 100%;
+    height: 30%;
+}
+
+.defaultH1{
+    font-size: 3em;
+}
+
+#userComplexionData{
+    width: 100%;
+    height: 70%;
+    flex: 1;
 }
 
 .userComplexionList{
-    font-size: 25px;
+    margin-top: 1em;
     list-style-type: none;
-    margin-top: 20px;
-    margin-left: 20px;
 }
 
-li{
-    margin-top: 5px;
-}
-
-.userEmail{
-    margin-left: 170px;
-    max-width: 315px;
-}
-
-.changePassword{
-    margin-top: 30px;
-    margin-left: 170px;
-    max-width: 100%;
-}
-
-.defaultLabelInputContainer{
-    display: inline-block;
-}
-
-.defaultLabelInputContainer input{
-    width: 150px;
-}
-
-label {
-    margin-left: 30px;
-}
-
-.logOut {
-    margin-left: 50px;
-
+.userComplexionList li{
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
 }
 
 
