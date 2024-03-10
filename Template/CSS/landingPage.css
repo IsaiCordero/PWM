@@ -39,7 +39,7 @@ h1 {
 }
 
 .loginRegisterButtons{
-    width: 25%;
+    width: 100%;
     padding-right: 2%;
     display: flex;
     justify-content: right;
