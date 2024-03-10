@@ -91,6 +91,12 @@ body{
     border-width: 0.1em;
 }
 
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 
