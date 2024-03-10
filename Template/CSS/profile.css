@@ -85,6 +85,18 @@ body{
     margin-right: 1em;
 }
 
+.defaultInput {
+    padding: 0.2em;
+    border-radius: 0.2em;
+    border-width: 0.1em;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 
 

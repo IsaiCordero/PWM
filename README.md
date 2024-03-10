@@ -1,4 +1,4 @@
-# Página web y aplicación de gimnasio(nombre)
+## Gym diary
 
-Archivos para la creación de ambos proyectos
-Me consumo como una vela no quiero a nadie a mi alrededor
+Templates del proyecto web Gym diary para una gestion del gimnasio, se encuentran los archivos css y html con las diferentes imagenes utilizadas en estos.
+
