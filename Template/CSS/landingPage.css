@@ -127,8 +127,10 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    flex: 1;
+    margin-top: -6em;
 }
+
 .dayAndExercise {
     margin-top: 60px;
     display: flex;
@@ -226,3 +228,13 @@ label {
 .password {
     margin-top: 40px;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.defaultMain{
+    flex: 1;
+}
+

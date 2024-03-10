@@ -6,61 +6,59 @@
     <meta charset="UTF-8">
     <title>Exercises</title>
     <script src="xlu-include-file.js"></script>
-    </head>
-    <body>
-        <div>
-            <header class="header" xlu-include-file="header.html">
-            </header>
-        </div>
-
-        <p class="exercises">Exercises</p>
-        <div class="divExercises">
-            <div class="pectoral">
-                <p>Pectoral</p>
+</head>
+<body>
+    <header class = "header" xlu-include-file="header.html">
+    </header>
+    <main class="defaultMain">
+        <header class="exercises">
+            <h1 id="headerExercises">
+                Exercises
+            </h1>
+        </header>
+        <section class="divExercises">
+            <figure class="pectoral">
+                <figcaption>Pectoral</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/pectoral.png" alt="Imagen de Pectoral">
-            </div>
+            </figure>
 
-            <div class="espalda">
-                <p>Espalda</p>
+            <figure class="espalda">
+                <figcaption>Espalda</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/espalda.png"  alt="Imagen de Espalda">
-            </div>
+            </figure>
 
-            <div class="isquiotibial">
-                <p>Isquiotibial</p>
+            <figure class="isquiotibial">
+                <figcaption>Isquiotibial</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/isquio.png" alt="Imagen de Isquiotibial">
-            </div>
+            </figure>
 
-            <div class="triceps">
-                <p>Triceps</p>
-                <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/triceps.png" alt="Imagen de Triceps">
-            </div>
+            <figure class="triceps">
+                <figcaption>Triceps</figcaption>
+                <img class="tricepsImg" onclick="window.location.href='exercisesByMuscle.html'" src="../../images/triceps.png" alt="Imagen de Triceps">
+            </figure>
 
-            <div  class="biceps">
-                <p>Biceps</p>
+            <figure  class="biceps">
+                <figcaption>Biceps</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/biceps.png" alt="Imagen de Biceps">
-            </div>
+            </figure>
 
-            <div class="hombros">
-                <p>Hombros</p>
+            <figure class="hombros">
+                <figcaption>Hombros</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/hombros.png"  alt="Imagen de Hombros">
 
-            </div>
+            </figure>
 
-            <div class="cuadriceps">
-                <p>Cuadriceps</p>
+            <figure class="cuadriceps">
+                <figcaption>Cuadriceps</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/cuadriceps.png" alt="Imagen de Cuadriceps">
-            </div>
+            </figure>
 
-            <div class="gemelos">
-                <p>Gemelos</p>
+            <figure class="gemelos">
+                <figcaption>Gemelos</figcaption>
                 <img onclick="window.location.href='exercisesByMuscle.html'" src="../../images/gemelos.png" alt="Imagen de Gemelos">
-            </div>
-
-
-        </div>
-
-    </body>
-    <div class = "foot">
-        <div xlu-include-file="footer.html"></div>
-    </div>
+            </figure>
+        </section>
+    </main>
+    <footer xlu-include-file="footer.html"></footer>
+</body>
 </html>

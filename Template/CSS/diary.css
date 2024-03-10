@@ -1,4 +1,3 @@
-
 .day1, .day2, .day3, .newDay{
     margin-top: 1.5em;
     position: relative;
@@ -48,6 +47,7 @@
     position: absolute;
 }
 .divWeekPlan {
+    height: 40%;
     padding: 3.5em 3em;
     justify-content: space-between;
     display: flex;
@@ -67,7 +67,7 @@
 .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
 
     flex-basis: 5em;
-    box-sizing: content-box;
+    height: 7em;
     padding: 1.55em;
     border-style: solid;
     border-color: black;
@@ -79,91 +79,3 @@
     background-color: rgba(201, 184, 249, 0.69);
 }
 
-/*
-.day1Bars{
-    top: 125px;
-    left: 90px;
-    position: absolute;
-}
-.day1Circle{
-    top: 115px;
-    left: 140px;
-    color: black;
-    position: absolute;
-}
-.day1Text{
-    font-size: 20px;
-    top: 130px;
-    left: 210px;
-    position: absolute;
-}
-.day1Exercises{
-    font-size: 20px;
-    top: 130px;
-    right: 100px;
-    position: absolute;
-}
-.day2Bars{
-    top: 195px;
-    left: 90px;
-    position: absolute;
-}
-.day2Circle{
-    top: 185px;
-    left: 140px;
-    color: black;
-    position: absolute;
-}
-.day2Text{
-    font-size: 20px;
-    top: 200px;
-    left: 210px;
-    position: absolute;
-}
-.day2Exercises{
-    font-size: 20px;
-    top: 200px;
-    right: 100px;
-    position: absolute;
-}
-.day3Bars{
-    top: 265px;
-    left: 90px;
-    position: absolute;
-}
-.day3Circle{
-    top: 255px;
-    left: 140px;
-    color: black;
-    position: absolute;
-}
-.day3Text{
-    font-size: 20px;
-    top: 270px;
-    left: 210px;
-    position: absolute;
-}
-.day3Exercises{
-    font-size: 20px;
-    top: 270px;
-    right: 100px;
-    position: absolute;
-}
-.newDayCircle{
-    top: 335px;
-    left: 140px;
-    color: black;
-    position: absolute;
-}
-.newDayText{
-    font-size: 20px;
-    top: 347px;
-    left: 210px;
-    position: absolute;
-}
-.day1, .day2, .day3, .newDay{
-    background-color: blue;
-}
-.newDay{
-    background-color: red;
-}*/

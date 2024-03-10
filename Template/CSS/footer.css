@@ -1,3 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .defaultFooter{
     width: 100%;
     padding-top: 1%;
