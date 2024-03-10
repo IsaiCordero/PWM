@@ -1,29 +1,23 @@
-.progressHeader{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    font-size: 40px;
-}
+
+
+
 .subtitle-containerProgress {
     display: flex; /* Utilizamos Flexbox para organizar los elementos en una fila */
     justify-content: space-evenly; /* Distribuye el espacio entre los elementos, colocándolos uno al lado del otro */
     width: 100%; /* Ajustamos el ancho al 100% del contenedor */
     position: relative; /* Permitirá el posicionamiento relativo de los elementos hijos */
-
 }
 
 .left-subtitle {
     margin-top: 50px;
     margin-bottom: 10px; /* Margen inferior para separar el subtítulo de la imagen */
-    color: lightgray;
+    color: black;
 }
 
 .right-subtitle {
     margin-top: 50px;
     margin-bottom: 10px; /* Margen inferior para separar el subtítulo de la imagen */
-    color: lightgray;
+    color: black;
 }
 
 .mainHeader{
@@ -44,28 +38,33 @@
     color: lightgray;
 }
 .subtitleProgressUnderneath {
-    margin-top: -15px;
-    margin-bottom: 50px;
-    color: lightgray;
+    margin-top: 2em;
+    color: black;
 }
 
 .progressImage {
+
     width: 55%;
 }
 .small-image {
-     /*Adjust the width as needed*/
-    height: 70%;
+    /*Adjust the width as needed*/
+    height: 73%;
+    width: 20%;
 }
 
 .left-image {
-    width: 50%;
+
     position: absolute;
     left: 0;
+
 }
 
 .right-image {
-    width: 50%;
 
     position: absolute;
     right: 0;
+}
+.progressFooter {
+    margin-top: 6.5em;
+    margin-bottom: 1em;
 }
