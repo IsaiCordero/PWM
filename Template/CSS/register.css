@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, serif;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.mid_register {
+    font-family: Arial, serif;
+    text-align: center;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Estilos del formulario de registro */
+.register_data {
+    font-family: Arial, serif;
+    max-width: 100%;
+    margin: 0;
+    background-color: #F1DDD9;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos de los campos del formulario */
+label {
+    font-weight: normal;
+    text-align: left;
+
+}
+
+input[type="text"],
+
+input[type="password"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+/* Estilos del botón de envío */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el selector de género */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para los elementos de dos columnas */
+.spName, .spLastName, .spEmail, .spPass, .sp5, .sp6 {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, serif;
+}
+
+.sp5 select{
+    font-family: Arial, serif;
+    width: 30%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: 0; /* Aplica negrita al texto dentro del label */
+
+}
+.spName input {
+    font-family: Arial, serif;
+    width: 30%;
+    text-align: left;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.spLastName input {
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.spEmail input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.sp6 input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.spPass input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+/* Limpiar el flotador */
+.sp6::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.press-button {
+    background-color: #4a4ca9;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: right;
+
+}
+
+.press-button button{
+    text-align: left;
+}
+
+.But button{
+    text-align: left;
+}
+
+.press-button:hover {
+    background-color: #222684;
+    text-align: right;
+}
+
+.press-button:active {
+    background-color: #222684;
+    text-align: right;
+}

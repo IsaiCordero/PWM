@@ -1,8 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Register</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../../CSS/register.css">
+    <link rel="stylesheet" href="../../CSS/landingPage.css">
+    <script src="xlu-include-file.js"></script>
 
-    </head>
+</head>
+<body>
+<header xlu-include-file="landingPageHeader.html">
+</header>
+<div class = "mid_register">
+    <h2 class = "title_home">Create account</h2>
+</div>
+
+<div class = "register_data">
+
+    <div  class = "spName">
+        <br><label for="name">Name</label><br><br><input type="text" id="name" name="name" placeholder="Write your name">
+    </div>
+
+    <div class = "spLastName">
+        <br><label for="lastName">Last Name</label><br><br><input type="text" id="lastName" name="lastName" placeholder="Write your last name">
+    </div>
+
+    <div class = "sp6">
+        <br><label for="birthday">Birthday</label><br><br>
+        <input type="date" id="birthday" name="birthday"><br>
+    </div>
+
+    <div class="sp5">
+        <br><label for="birthday">Gender<br><br>
+        <select name="Gender">
+            <option value="" disabled selected>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+    </label><br><br>
+    </div>
+
+    <div class = "spEmail">
+        <label for="email">Email</label><br><br><input type="text" id="email" name="email" placeholder="Write your email">
+    </div>
+
+    <div class = "spPass">
+        <br><label for="registerPassword">Password</label><br><br><input type="password" id="registerPassword" name="registerPassword" placeholder="Write your password">
+    </div>
+
+    <div class = "But">
+        <br><br><button class="press-button">Register</button><br><br>
+    </div>
+
+</div>
+
+
+</body>
+<footer xlu-include-file="footer.html">
+</footer>
 </html>
