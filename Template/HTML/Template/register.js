@@ -4,8 +4,9 @@ function register(){
     const birthday = document.getElementById("birthday").value;
     const gender = document.getElementById("gender").value;
     const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const password = document.getElementById("registerPassword").value;
+
 
     alert('Register completed');
-    window.location.href = 'https://www.google.com';
+    window.location.href = 'login.html';
 }

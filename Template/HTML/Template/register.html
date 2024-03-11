@@ -17,24 +17,24 @@
     <h2 class = "title_home">Create account</h2>
 </div>
 
-<form class = "register_data">
+<form class = "register_data" onsubmit="register(); return false;">
 
     <div  class = "spName">
         <br><label for="name">Name</label><br><br><input type="text" id="name" name="name" placeholder="Write your name" required>
     </div>
 
     <div class = "spLastName">
-        <br><label for="lastName">Last Name</label><br><br><input type="text" id="lastName" name="lastName" placeholder="Write your last name">
+        <br><label for="lastName">Last Name</label><br><br><input type="text" id="lastName" name="lastName" placeholder="Write your last name" required>
     </div>
 
     <div class = "sp6">
         <br><label for="birthday">Birthday</label><br><br>
-        <input type="date" id="birthday" name="birthday"><br>
+        <input type="date" id="birthday" name="birthday" required><br>
     </div>
 
     <div class="sp5">
         <br><label for="birthday">Gender<br><br>
-        <select name="Gender" id="gender">
+        <select name="Gender" id="gender" required>
             <option value="" disabled selected>Select</option>
             <option>Male</option>
             <option>Female</option>
@@ -44,15 +44,15 @@
     </div>
 
     <div class = "spEmail">
-        <label for="email">Email</label><br><br><input type="text" id="email" name="email" placeholder="Write your email">
+        <label for="email">Email</label><br><br><input type="text" id="email" name="email" placeholder="Write your email" required>
     </div>
 
     <div class = "spPass">
-        <br><label for="registerPassword">Password</label><br><br><input type="password" id="registerPassword" name="registerPassword" placeholder="Write your password">
+        <br><label for="registerPassword">Password</label><br><br><input type="password" id="registerPassword" name="registerPassword" placeholder="Write your password" required>
     </div>
 
     <div class = "But">
-        <br><br><button class="press-button" type="submit" onsubmit="register()">Register</button><br><br>
+        <br><br><button class="press-button" type="submit" onclick="register()">Register</button><br><br>
     </div>
 
 </form>
