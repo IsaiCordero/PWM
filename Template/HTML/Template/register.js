@@ -1,4 +1,4 @@
-function validarFormulario(){
+function validRegister(){
     const name = document.getElementById("name").value;
     const lastName = document.getElementById("lastName").value;
     const birthday = document.getElementById("birthday").value;
@@ -6,16 +6,15 @@ function validarFormulario(){
     const email = document.getElementById("email").value;
     const password = document.getElementById("registerPassword").value;
 
-    if (name === '' || lastName === '' || birthday === '' || gender === '' || email === '' || password === ''){
-        alert("Complete all the fields")
-    }
 
-
+    register();
+    return false;
 
 }
 
 function register() {
+    alert("Register completed")
     window.location.href = 'login.html';
-    alert('Register completed');
 
 }
+

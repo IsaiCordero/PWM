@@ -47,6 +47,7 @@ input[type="date"] {
 }
 
 /* Estilos del botón de envío */
+/*
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -56,11 +57,13 @@ input[type="submit"] {
     cursor: pointer;
 
 }
+*/
+/*
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
+*/
 /* Estilos para el selector de género */
 select {
     width: 100%;
@@ -138,7 +141,7 @@ select {
 }
 
 .press-button {
-    background-color: #4a4ca9;
+    background-color:  #080A45;
     color: white;
     padding: 8px 15px;
     font-size: 16px;
