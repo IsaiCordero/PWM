@@ -5,36 +5,40 @@
     <link rel="stylesheet" href="../../CSS/landingPage.css">
     <link rel="stylesheet" href="../../CSS/profile.css">
     <script src="xlu-include-file.js"></script>
+    <script src="login.js"></script>
     <title>Login</title>
 </head>
-    <body>
-        <header xlu-include-file="landingPageHeader.html">
-            <div xlu-include-file="buttonLoginRegister.html"></div>
+<body>
+<header xlu-include-file="landingPageHeader.html">
+    <div xlu-include-file="buttonLoginRegister.html"></div>
+</header>
+<main class="defaultMain">
+    <section class = "title_login">
+        <header>
+            <h1 class="defaultH1">Login</h1>
         </header>
-        <main class="defaultMain">
-            <section class = "title_login">
-                <header>
-                    <h1 class="defaultH1">Login</h1>
-                </header>
-                <div class = "having_account">
-                    <button class="no-filled" onclick="window.location.href='Register.html'">Don´t have an account</button>
-                    <button class = "button-filled" onclick="window.location.href='Login.html'">Already have an account</button>
-                </div>
-            </section>
-            <section class = "form_login">
-                <form>
-                    <div class="email">
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email"  placeholder="Write your email" required ><br>
-                    </div>
-                    <div class="password">
-                        <label for="password">Password</label><br>
-                        <input type="password" id="password" name="password" placeholder="Write your password" required><br>
-                    </div>
-                </form>
-                <button class="button-filled button-login" onclick="window.location.href='homePage.html'">Login</button>
-            </section>
-        </main>
-    <footer xlu-include-file="footer.html"></footer>
-    </body>
+        <div class = "having_account">
+            <button class="no-filled" onclick="window.location.href='Register.html'">Don´t have an account</button>
+            <button class = "button-filled" onclick="window.location.href='Login.html'">Already have an account</button>
+        </div>
+    </section>
+    <section class = "form_login">
+        <form onsubmit="return validLogin()">
+            <div class="email">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"  placeholder="Write your email" required ><br>
+            </div>
+            <div class="password">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Write your password" required><br>
+            </div>
+            <div>
+                <input class="button-filled button-login" type="submit" value="Login">
+            </div>
+        </form>
+
+    </section>
+</main>
+<footer xlu-include-file="footer.html"></footer>
+</body>
 </html>
