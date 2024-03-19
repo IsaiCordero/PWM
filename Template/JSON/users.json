@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "user_id" : "1",
+      "username" : "gymDiaryUser",
+      "password" : "prueba",
+      "email" : "gymdiaryuser@email.com",
+      "name" : "Name",
+      "surname1" : "Surname1",
+      "surname2" : "Surname2",
+      "birthdate" : "2001-06-05",
+      "height(cm)" : "195",
+      "weight(kg)" : "95",
+      "gender" : "Other"
+    },
+    {
+      "user_id" : "2",
+      "username" : "viera21",
+      "password" : "prueba2",
+      "email" : "viera21@email.com",
+      "name" : "Jonathan",
+      "surname1" : "Viera",
+      "surname2" : null,
+      "birthdate" : "1989-10-21",
+      "height(cm)" : "171",
+      "weight(kg)" : "75",
+      "gender" : "Male"
+    },
+    {
+      "user_id" : "3",
+      "username" : "mireBel",
+      "password" : "prueba3",
+      "email" : "mireiabelmonte@email.com",
+      "name" : "Mireia",
+      "surname1" : "Belmonte",
+      "surname2" : "García",
+      "birthdate" : "1990-11-10",
+      "height(cm)" : "170",
+      "weight(kg)" : "65",
+      "gender" : "Female"
+    }
+
+  ]
+}
