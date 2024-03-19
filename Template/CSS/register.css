@@ -1,8 +1,10 @@
+
 body {
     font-family: Arial, serif;
     margin-bottom: 0;
     padding: 0;
     background-color: #ffffff;
+    color: #000000 ;
 }
 
 .mid_register {
@@ -13,12 +15,13 @@ body {
     color: #000000;
 }
 
+
 /* Estilos del formulario de registro */
 .register_data {
     font-family: Arial, serif;
     max-width: 100%;
     margin: 0;
-    background-color: #F1DDD9;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -157,16 +160,6 @@ select {
     text-align: left;
 }
 
-.But button{
+.But button {
     text-align: left;
-}
-
-.press-button:hover {
-    background-color: #222684;
-    text-align: right;
-}
-
-.press-button:active {
-    background-color: #222684;
-    text-align: right;
 }
