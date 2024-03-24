@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../CSS/landingPage.css">
+    <link rel="stylesheet" href="../../CSS/muscleGroupMenu.css">
+    <script src="xlu-include-file.js"></script>
+    <title>Exercise</title>
+</head>
+<body>
+    <div>
+        <header class = "header" xlu-include-file="header.html">
+        </header>
+    </div>
+    <section class="imageExerciseByMuscle">
+        <section class="setsExerciseMuscle">
+            <form id="loginForm" class="addExerciseForm">
+                <label for="name" class="titleContainer"><strong>Exercise name</strong></label>
+                <input type="text" id="name" name="name" class="inputName1" size="30" placeholder="Exercise name">
+                <div id="add" xlu-include-file="setForm.html"></div>
+
+                <button type = "button"  class="addSet button-filled" onclick="return removeSet()">-</button>
+                <button type = "button" class="addSet button-filled" onclick="return addSet()">+</button>
+
+                <label for="restTime" id="inputName"><strong>Rest time (seconds)</strong></label>
+                <input type="number" id="restTime" class="inputName2" name="restTime" placeholder="Rest time" min="0" step="30">
+            </form>
+            <div class="inline">
+                <button  class="button-filled addNewExercise" onclick="window.location.href='addExerciseFormulary.html'">Add new exercise</button>
+                <button  class="no-filled addNewExercise" onclick="window.location.href='addExerciseFormulary.html'">Change exercise photo</button>
+            </div>
+        </section>
+        <img src="../../images/predeterminado.jpg" class="legExtensionImage">
+    </section>
+
+</body>
+<div class = "foot">
+    <div xlu-include-file="footer.html"></div>
+    <script src="../JavaScript/addSet.js"> </script>
+    <script src="../JavaScript/removeSet.js"> </script>
+</div>
+</html>
