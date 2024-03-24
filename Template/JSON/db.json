@@ -9,9 +9,10 @@
       "surname1": "Surname1",
       "surname2": "Surname2",
       "birthdate": "2001-06-05",
-      "height(cm)": "195",
-      "weight(kg)": "95",
+      "height(cm)": "1,95m",
+      "weight(kg)": "95kg",
       "gender": "Other",
+      "profile_picture": null,
       "id": "2168"
     },
     {
@@ -23,9 +24,10 @@
       "surname1": "Viera",
       "surname2": null,
       "birthdate": "1989-10-21",
-      "height(cm)": "171",
-      "weight(kg)": "75",
+      "height": "1,71m",
+      "weight": "75kg",
       "gender": "Male",
+      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
       "id": "8da4"
     },
     {
@@ -37,9 +39,10 @@
       "surname1": "Belmonte",
       "surname2": "García",
       "birthdate": "1990-11-10",
-      "height(cm)": "170",
-      "weight(kg)": "65",
+      "height": "1,70cm",
+      "weight": "65kg",
       "gender": "Female",
+      "profile_picture": null,
       "id": "402e"
     }
   ]

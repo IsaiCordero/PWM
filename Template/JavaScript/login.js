@@ -19,13 +19,15 @@ function validateCredentials() {
                         "name" : user.name,
                         "surname1" : user.surname1,
                         "surname2" : user.surname2,
+                        "email" : email,
                         "weight" : user.weight,
                         "height" : user.height,
                         "gender" : user.gender,
-                        "birthdate" : user.birthdate
+                        "birthdate" : user.birthdate,
+                        "profilePicture": user.profile_picture
                     };
+                    alert(JSON.stringify(informationToUse));
                     sessionStorage.setItem("User Information", JSON.stringify(informationToUse));
-                    alert("Success!!!");
                     window.location.href = "../Template/homePage.html";
                     return true;
                 }
