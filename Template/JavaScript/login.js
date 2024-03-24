@@ -1,5 +1,5 @@
 //Catch button for login form and add listener to compare data.
-const loginButton = document.querySelector(".press-button");
+const loginButton = document.querySelector(".button-login");
 loginButton.addEventListener("click", function(event){
     event.preventDefault();
     validateCredentials();
@@ -15,7 +15,16 @@ function validateCredentials() {
             for(const user of jsonData){
                 // Credentials match
                 if(user.email === email && user.password === password){
-                    sessionStorage.setItem("userInformation", JSON.stringify(user));
+                    const informationToUse = {
+                        "name" : user.name,
+                        "surname1" : user.surname1,
+                        "surname2" : user.surname2,
+                        "weight" : user.weight,
+                        "height" : user.height,
+                        "gender" : user.gender,
+                        "birthdate" : user.birthdate
+                    };
+                    sessionStorage.setItem("User Information", JSON.stringify(informationToUse));
                     alert("Success!!!");
                     window.location.href = "../Template/homePage.html";
                     return true;

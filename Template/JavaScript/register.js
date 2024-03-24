@@ -10,20 +10,20 @@ document.addEventListener("DOMContentLoaded", function(){
         alert("Soy gay");
     }
 })
-
-// Obtener los valores de los campos del formulario
-var userName = document.getElementById("userName").value;
-var firstName = document.getElementById("name").value;
-var lastName = document.getElementById("lastName").value;
-var secondSurname = document.getElementById("SecondSurname").value;
-var height = document.getElementById("height").value;
-var weight = document.getElementById("weight").value;
-var birthdate = document.getElementById("birthday").value;
-var gender = document.getElementById("gender").value;
-var email = document.getElementById("email").value;
-var password = document.getElementById("registerPassword").value;
-
 function validateRegister() {
+    // Obtener los valores de los campos del formulario
+    const userName = $("#userName").val().trim();
+    console.log(userName)
+    const firstName = document.getElementById("name").value;
+    const lastName = document.getElementById("lastName").value;
+    const secondSurname = document.getElementById("SecondSurname").value;
+    const height = document.getElementById("height").value;
+    const weight = document.getElementById("weight").value;
+    const birthdate = document.getElementById("birthday").value;
+    const gender = document.getElementById("gender").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("registerPassword").value;
+
     let userInformation = {
         "username": userName,
         "password": password,
@@ -36,30 +36,20 @@ function validateRegister() {
         "weight(kg)": weight,
         "gender": gender
     }
-    fetch("http://localhost:3000/users", {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userInformation)
-    }).then(response => response.json())
-        .then(console.log("Hizo algo"));
-    /*
-    $.ajax({
-        data: JSON.stringify(userInformation),
-        url: "http://localhost:3000/users",
+    alert(JSON.stringify(userInformation));
+    $.ajax("http://localhost:3000/users",{
+        data: userInformation,
         type: "POST",
         dataType: "json",
-        contentType: false,
+        contentType: "application/json",
         success: function (response) {
-            console.log("Successfully registered:", response);
+            alert(response);
             window.location.href = "../Template/Login.html"
         },
         error: function (xhr, status, error) {
             console.error("Error registering user:", error);
         }
     });
-    */
 }
 function validatePassword(password) {
     const passwordRegex = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[-_!@#?¿!¡\$%\^&\*]).{6,}$/';
