@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "user_id": "1",
+      "username": "gymDiaryUser",
+      "password": "prueba",
+      "email": "gymdiaryuser@email.com",
+      "name": "Name",
+      "surname1": "Surname1",
+      "surname2": "Surname2",
+      "birthdate": "2001-06-05",
+      "height(cm)": "1,95m",
+      "weight(kg)": "95kg",
+      "gender": "Other",
+      "profile_picture": null,
+      "id": "2168"
+    },
+    {
+      "user_id": "2",
+      "username": "viera21",
+      "password": "prueba2",
+      "email": "viera21@email.com",
+      "name": "Jonathan",
+      "surname1": "Viera",
+      "surname2": null,
+      "birthdate": "1989-10-21",
+      "height": "1,71m",
+      "weight": "75kg",
+      "gender": "Male",
+      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
+      "id": "8da4"
+    },
+    {
+      "user_id": "3",
+      "username": "mireBel",
+      "password": "prueba3",
+      "email": "mireiabelmonte@email.com",
+      "name": "Mireia",
+      "surname1": "Belmonte",
+      "surname2": "García",
+      "birthdate": "1990-11-10",
+      "height": "1,70cm",
+      "weight": "65kg",
+      "gender": "Female",
+      "profile_picture": null,
+      "id": "402e"
+    }
+  ]
+}

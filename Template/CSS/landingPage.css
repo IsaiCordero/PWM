@@ -107,7 +107,7 @@ label {
 
 .button-login {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 1.5em;
     width: 100px;
     height: 25px;
     margin-bottom: 40px;
@@ -236,5 +236,10 @@ body{
 
 .defaultMain{
     flex: 1;
+}
+
+.errorMessage{
+    color: red;
+    margin-top: 1.5em;
 }
 
