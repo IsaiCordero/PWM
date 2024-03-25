@@ -10,6 +10,7 @@ function validateCredentials() {
         type: "GET",
         dataType: "json",
         success: function (jsonData){
+            console.log(jsonData);
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             for(const user of jsonData){

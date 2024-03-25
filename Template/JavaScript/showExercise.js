@@ -1,10 +1,10 @@
 $(document).ready(function() {
     // Cargar el archivo JSON
-    $.getJSON('http://127.0.0.1:3000/db.json', function(data) {
+    $.getJSON('http://localhost:3000/exercises', function(data) {
         // Obtener la lista de ejercicios del JSON
-        var exercises = data.exercises;
+        var exercises = data;
         console.log(exercises);
-        exercises.forEach(function(exercise){
+        exercises.forEach(function(exercises){
 
             $.ajax({
                 url: 'exercise.html',
@@ -12,9 +12,9 @@ $(document).ready(function() {
                 success: function(html) {
                     var newExercise = $(html);
 
-                    newExercise.find('strong').text(exercise.name);
-                    newExercise.find('img').attr('src', exercise.photo);
-                    newExercise.find('.pectoralImagen').attr('alt', 'Imagen de ' + exercise.name);
+                    newExercise.find('strong').text(exercises.name);
+                    newExercise.find('img').attr('src', exercises.photo);
+                    newExercise.find('.pectoralImagen').attr('alt', 'Imagen de ' + exercises.name);
 
 
                     $('#addYourExercise').append(newExercise);

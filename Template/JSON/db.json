@@ -11,7 +11,9 @@
       "birthdate" : "2001-06-05",
       "height(cm)" : "195",
       "weight(kg)" : "95",
-      "gender" : "Other"
+      "gender" : "Other",
+      "profile_picture": null,
+      "id": "2168"
     },
     {
       "user_id" : "2",
@@ -24,7 +26,9 @@
       "birthdate" : "1989-10-21",
       "height(cm)" : "171",
       "weight(kg)" : "75",
-      "gender" : "Male"
+      "gender" : "Male",
+      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
+      "id": "8da4"
     },
     {
       "user_id" : "3",
@@ -37,7 +41,9 @@
       "birthdate" : "1990-11-10",
       "height(cm)" : "170",
       "weight(kg)" : "65",
-      "gender" : "Female"
+      "gender" : "Female",
+      "profile_picture": null,
+      "id": "402e"
     }
   ],
 
@@ -46,7 +52,7 @@
       "id": 1,
       "photo": "../../images/press-banca.webp",
       "name": "Bench Press",
-      "related_to_database": false,
+      "related_to_database": false
     },
     {
       "id": 2,
@@ -64,7 +70,6 @@
       "id": 4,
       "photo": "../../images/leg-press-icon.webp",
       "name": "Leg Press",
-      "rest_time": 45,
       "related_to_database": false
     }
   ], "user_workouts": [
