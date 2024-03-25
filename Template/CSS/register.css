@@ -163,3 +163,6 @@ select {
 .But button {
     text-align: left;
 }
+.btnGoBack {
+    margin-top: 1.5em;
+}
