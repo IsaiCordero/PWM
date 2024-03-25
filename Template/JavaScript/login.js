@@ -6,7 +6,7 @@ loginButton.addEventListener("click", function(event){
 });
 function validateCredentials() {
     $.ajax({
-        url: "http://localhost:3000/db.json",
+        url: "http://localhost:3000/users",
         type: "GET",
         dataType: "json",
         success: function (jsonData){

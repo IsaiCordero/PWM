@@ -81,3 +81,4 @@ function goBack() {
     document.getElementById("account").classList.remove("show", "active");
     document.getElementById("personal").classList.add("show", "active");
 }
+

@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="../../CSS/landingPage.css">
     <link rel="stylesheet" href="../../CSS/homePage.css">
     <link rel="stylesheet" href="../../CSS/profile.css">
-    <script src="xlu-include-file.js"></script>
+    <script src="../../JavaScript/xlu-include-file.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../../JavaScript/sessionStorageUtils.js"></script>
+    <script src="../../JavaScript/profile.js"></script>
     <title>User Profile</title>
 </head>
 <body>
@@ -29,38 +32,31 @@
                 </header>
                 <section class="userInformation">
                     <ul class="userComplexionList">
-                        <li>Male/Female/Other</li>
-                        <li>1,80m/5'11</li>
-                        <li>85kg/187lbs</li>
-                        <li>23/01/01 (23)</li>
+                        <li><strong>Gender: </strong> <span id="gender">Male/Female/Other</span></li>
+                        <li><strong>Height: </strong> <span id="height">1,80m/5'11</span></li>
+                        <li><strong>Weight: </strong> <span id="weight">85kg/187lbs</span></li>
+                        <li><strong>Birthdate: </strong> <span id="birthdate">23/01/01 (23)</span></li>
                     </ul>
                 </section>
                 <section class="userInformation">
                     <header id="userMailPassword">
                         <h2 class="accountCredentials">
                             Account credentials
+                            <img id="editCredentials" src="../../images/icons/edit_icon.svg">
                         </h2>
                     </header>
                     <form class="emailPasswordChange">
-                        <div class="labelInputGroup">
-                            <label for="email"> Email </label>
-                            <input class="defaultInput" type="email" id="email" value="user@email.com">
-                        </div>
-                        <div id="userPassword">
-                            <div class="labelInputGroup">
-                                <div>
-                                    <label for="password"> Change Password </label>
-                                    <input class="defaultInput" type="password" id="password">
-                                </div>
-                                <div>
-                                    <label for="confirmPassword"> Confirm Password </label>
-                                    <input class="defaultInput" type="password" id="confirmPassword">
-                                </div>
+                        <ul class="userCredentialsList">
+                            <li><strong>Username: </strong><span id="username">username1</span></li>
+                            <li><strong>Email: </strong><span id="email">user@email.com</span></li>
+                        </ul>
+                        <form>
+                            <div>
+                                <label></label>
+                                <input>
                             </div>
-                        </div>
-                        <button class="button-filled">Confirm Changes</button>
+                        </form>
                     </form>
-                    </section>
                 </section>
             </section>
         </section>

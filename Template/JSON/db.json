@@ -39,7 +39,6 @@
       "weight(kg)" : "65",
       "gender" : "Female"
     }
-
   ],
 
   "exercises": [
@@ -117,8 +116,5 @@
       }
     ]
   }
-
 ]
-
-
 }
