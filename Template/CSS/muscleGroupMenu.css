@@ -53,3 +53,74 @@ body{
 .triceps{
     background: white;
 }
+
+.selectMuscle {
+    width: 50%;
+    height: 2em;
+}
+
+#muscleSelection {
+    text-align: left;
+    margin-bottom: 0.5em;
+
+}
+
+.material-symbols-outlined {
+    text-align: left;
+    margin-left: 0.3em;
+}
+
+.align {
+    display: inline-flex;
+    text-align: left;
+
+}
+
+#rightButton {
+    margin-left: 3.5em;
+
+}
+
+.removeEditExercise {
+    display: block;
+    text-align: center;
+    padding: 2em;
+}
+
+.small-image {
+
+    width: 100px;
+
+
+}
+
+.exercisesDisplay {
+    align-items: center;
+    display: inline-block;
+
+}
+
+.addYourExercise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addExerciseFormNoInfo {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#noInfoFormTitle {
+    text-align: left;
+
+}
+
+.inputNameNoInfo {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del campo de entrada */
+    width: 80%; /* Ajusta el ancho del campo de entrada */
+    height: 40px; /* Ajusta la altura del campo de entrada */
+    margin-bottom: 0.8em; /* Ajusta el margen inferior entre los elementos */
+    margin-top: -1em;
+}

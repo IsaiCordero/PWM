@@ -40,5 +40,85 @@
       "gender" : "Female"
     }
 
-  ]
+  ],
+
+  "exercises": [
+    {
+      "id": 1,
+      "photo": "../../images/press-banca.webp",
+      "name": "Bench Press",
+      "related_to_database": false,
+    },
+    {
+      "id": 2,
+      "photo": "../../images/chestDay.png",
+      "name": "Incline Bench Press",
+      "related_to_database": false
+    },
+    {
+      "id": 3,
+      "photo": "../../images/seated-chest-press.png",
+      "name": "Seated Press",
+      "related_to_database": false
+    },
+    {
+      "id": 4,
+      "photo": "../../images/leg-press-icon.webp",
+      "name": "Leg Press",
+      "rest_time": 45,
+      "related_to_database": false
+    }
+  ], "user_workouts": [
+  {
+    "username": "viera21",
+    "workout_id": 1
+  },
+  {
+    "username": "viera21",
+    "workout_id": 2
+  },
+  {
+    "username": "viera21",
+    "workout_id": 3
+  },
+  {
+    "username": "viera21",
+    "workout_id": 4
+  }
+], "workouts": [
+  {
+    "workout_id": 1,
+    "exercise1_id": 1,
+    "rest_time": 60,
+    "series": [
+      {
+        "exercise_id": 1,
+        "series_number": 1,
+        "repetitions": 12,
+        "weight": 20
+      },
+      {
+        "exercise_id": 1,
+        "series_number": 2,
+        "repetitions": 10,
+        "weight": 25
+      },
+      {
+        "exercise_id": 1,
+        "series_number": 2,
+        "repetitions": 10,
+        "weight": 30
+      },
+      {
+        "exercise_id": 1,
+        "series_number": 2,
+        "repetitions": 8,
+        "weight": 35
+      }
+    ]
+  }
+
+]
+
+
 }
