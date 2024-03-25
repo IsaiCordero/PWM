@@ -90,7 +90,7 @@
         font-size: 1.25em;
     }
 
-    .wednesday {
+    .monday {
         background-color: rgba(201, 184, 249, 0.69);
     }
 
@@ -100,8 +100,13 @@
         padding: 1.6em;
     }
 }
-@media only screen and (max-width: 1100px){
-    .sunday{
+@media only screen and (max-width: 1100px) {
+    .sunday {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .saturday{
         display: none;
     }
 }
@@ -115,6 +120,45 @@
         left: 40%;
         position: absolute;
     }
+    .friday{
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .thursday{
+        display: none;
+    }
+    .divWeekPlan {
+        padding: 3em 2em;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        flex-basis: 4em;
+        height: 6em;
+        padding: 2em;
+        font-size: 1.2em;
+    }
+    .divWeekPlan img {
+        height: 4em;
+    }
+    .weekPlan{
+        font-size: 1.35em;
+        top: 22em;
+        left: 40%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .wednesday{
+        display: none;
+    }
+    .divWeekPlan {
+        padding: 4em 5em;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        font-size: 1.2em;
+    }
+    .weekPlan{
+        left: 37%;
+    }
 }
 @media only screen and (max-width: 600px){
     .day1, .day2, .day3, .newDay {
@@ -124,11 +168,33 @@
         font-size: 0.8em;
         top: 1.5em;
     }
+    .divWeekPlan {
+        padding: 4em 5em;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        font-size: 1em;
+    }
+    .divWeekPlan img {
+        height: 4em;
+    }
+    .weekPlan{
+        font-size: 1.2em;
+        left: 36%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .day1Exercises, .day2Exercises, .day3Exercises {
         right: 4em;
+    }
+    .divWeekPlan {
+        padding: 4em 5em;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        font-size: 1em;
+    }
+    .divWeekPlan img {
+        height: 4em;
     }
 }
 
@@ -137,6 +203,12 @@
         font-size: 0.75em;
         top: 2.75em;
         left: 11em;
+    }
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+        font-size: 0.8em;
+    }
+    .weekPlan{
+        left: 33%;
     }
 }
 @media only screen and (max-width: 300px){
