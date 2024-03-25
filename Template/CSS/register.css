@@ -1,10 +1,8 @@
-
 body {
     font-family: Arial, serif;
     margin-bottom: 0;
     padding: 0;
     background-color: #ffffff;
-    color: #000000 ;
 }
 
 .mid_register {
@@ -15,13 +13,12 @@ body {
     color: #000000;
 }
 
-
 /* Estilos del formulario de registro */
 .register_data {
     font-family: Arial, serif;
     max-width: 100%;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #F1DDD9;
     padding: 10px;
     border-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,24 +46,6 @@ input[type="date"] {
 
 }
 
-/* Estilos del botón de envío */
-/*
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-*/
-/*
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-*/
 /* Estilos para el selector de género */
 select {
     width: 100%;
@@ -78,13 +57,50 @@ select {
 }
 
 /* Estilos para los elementos de dos columnas */
-.spName, .spLastName, .spEmail, .spPass, .sp5, .sp6 {
+.spLastName, .spEmail, .spPass, .sp5, .sp6 {
     width: 48%;
     display: inline-block;
     margin-right: 2%;
     box-sizing: border-box;
     text-align: left;
     font-family: Arial, serif;
+}
+
+.spName{
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, serif;
+}
+
+
+.userName{
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, serif;
+}
+.spWeight {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, serif;
+
+}
+.SecondSurname {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: Arial, serif;
+
 }
 
 .sp5 select{
@@ -129,7 +145,28 @@ select {
     font-weight: normal; /* Aplica negrita al texto dentro del label */
 }
 
+.spWeight input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
 .spPass input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.SecondSurname input{
+    width: 30%;
+    border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
+    padding: 5px; /* Espaciado interno para separar el texto del borde */
+    font-weight: normal; /* Aplica negrita al texto dentro del label */
+}
+
+.userName input{
     width: 30%;
     border: 1px solid black; /* Borde sólido de 2 píxeles de grosor y color negro */
     padding: 5px; /* Espaciado interno para separar el texto del borde */
@@ -143,8 +180,8 @@ select {
     clear: both;
 }
 
-.press-button {
-    background-color:  #080A45;
+.register-button {
+    background-color: #4a4ca9;
     color: white;
     padding: 8px 15px;
     font-size: 16px;
@@ -156,10 +193,21 @@ select {
 
 }
 
-.press-button button{
+.register-button button{
     text-align: left;
 }
 
-.But button {
+.But button{
     text-align: left;
 }
+
+.register-button:hover {
+    background-color: #222684;
+    text-align: right;
+}
+
+.register-button:active {
+    background-color: #222684;
+    text-align: right;
+}
+
