@@ -3,79 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Tus estilos personalizados -->
     <link rel="stylesheet" href="../../CSS/register.css">
     <link rel="stylesheet" href="../../CSS/landingPage.css">
+    <!-- Scripts -->
+    <script src="../../JavaScript/register.js"></script>
     <script src="../../JavaScript/xlu-include-file.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
-
 <body>
-    <header xlu-include-file="landingPageHeader.html"></header>
-    <div class = "mid_register">
-        <h2 class = "title_home">Create account</h2>
+<header xlu-include-file="landingPageHeader.html"></header>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <section class="col-md-6">
+            <!-- Pestañas -->
+            <ul class="nav nav-tabs mb-3 justify-content-center" id="registerTabs" role="tablist">
+                <li class="nav-item jus">
+                    <span class="nav-link active" id="personal-tab" role="tab" aria-controls="personal" aria-selected="true">
+                        <i class="fa fa-address-card"></i>
+                    </span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="account-tab" role="tab" aria-controls="account" aria-selected="false">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                </li>
+            </ul>
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content" id="registerTabsContent">
+                <!-- Pestaña de datos personales -->
+                <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                    <h2 class="title_home">Personal Information</h2>
+                    <!-- Formulario de datos personales -->
+                    <form class="register_data" id="personalForm" onsubmit="return false">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Write your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Write your last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="birthday">Birthday</label>
+                            <input type="date" class="form-control" id="birthday" name="birthday" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <input type="text" placeholder="Write your height (cm)" id="height" name="height" required>
+                            <br><label for="weight">Weight</label>
+                            <input type="text" placeholder="Write your weight (Kg)" id="weight" name="weight" required>
+                        </div>
+                        <!-- Botón de navegación a la siguiente pestaña -->
+                        <button class="btn button-filled btn-block" type="button" onclick="validInformation()">Next</button>
+                    </form>
+                </div>
+                <!-- Pestaña de datos de cuenta -->
+                <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <h2 class="title_home">Account Information</h2>
+                    <!-- Formulario de datos de cuenta -->
+                    <form class="register_data" onsubmit="return validRegister()">
+
+                        <div class="form-group">
+                            <label for="userName">Username</label>
+                            <input type="text" id="userName" placeholder="Write your username" name="userName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Write your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" name="registerPassword" placeholder="Write your password" required>
+                        </div>
+                        <!-- Botón de submit para enviar el formulario -->
+                        <div class="form-group text-center">
+                            <input class="btn button-filled register-button btn-block" type="submit" value="Register">
+                            <button class="btn no-filled btnGoBack" onclick="return goBack()">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
-    <form class = "register_data">
-        <div class = "errorMessage"></div>
-        <div class = "userName">
-            <br><label for="userName">Username</label><br><br>
-            <input type="text" id="userName" placeholder="Write your username" name="userName" required>
-        </div>
-
-        <div  class = "spName">
-            <br><label for="name">Name</label><br><br>
-            <input type="text" id="name" placeholder="Write your name" name="firstName" required>
-        </div>
-
-        <div class = "spLastName">
-            <br><label for="lastName">Last Name</label><br><br>
-            <input type="text" id="lastName" placeholder="Write your last name" name="lastName" required>
-        </div>
-
-        <div class = "SecondSurname">
-            <br><label for="SecondSurname">Second surname</label><br><br>
-            <input type="text" id="SecondSurname" placeholder="Write your second surname (Opt)" name="SecondSurname">
-        </div>
-
-        <div  class = "spWeight">
-            <br><label for="height">Height</label><br><br>
-            <input type="text" id="height" placeholder="Write your height (cm)" name="height" required>
-            <br><label for="weight">Weight</label><br><br>
-            <input type="text" id="weight" placeholder="Write your weight (Kg)" name="weight" required>
-
-        </div>
-        <div class = "sp6">
-            <br><label for="birthday">Birthdate</label><br><br>
-            <input type="date" id="birthday" name="birthdate" required><br>
-        </div>
-        <div class="sp5">
-            <br><label for="birthday">Gender<br>
-            <select name="gender" required>
-                <option value="" disabled selected>Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        </label><br><br>
-        </div>
-        <div class = "spEmail">
-            <label for="email">Email</label><br><br>
-            <input type="text" id="email" placeholder="Write your email" name="email" required>
-        </div>
-        <div class = "spPass">
-            <br><label for="registerPassword">Password</label><br><br>
-            <input type="password" id="registerPassword" placeholder="Write your password"  name="password" required>
-        </div>
-        <br><br>
-        <div class="But">
-            <input class="register-button" type="submit" value="Register">
-        </div>
-        <br><br>
-        <script src = "../../JavaScript/register.js"></script>
-    </form>
-<footer xlu-include-file="footer.html">
-</footer>
-<script>
-    xLuIncludeFile();
-</script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<footer xlu-include-file="footer.html"></footer>
 </html>

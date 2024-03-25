@@ -1,17 +1,17 @@
+
 document.addEventListener("DOMContentLoaded", function(){
     const registerButton = document.querySelector(".register-button");
     if(registerButton){
         registerButton.addEventListener("click", function(event){
             event.preventDefault();
-            validateRegister();
+            validRegister();
         });
     }
     else{
-        alert("Soy gay");
+        alert("Not function");
     }
 })
-function validateRegister() {
-    // Obtener los valores de los campos del formulario
+function validRegister(){
     const userName = $("#userName").val().trim();
     console.log(userName)
     const firstName = document.getElementById("name").value;
@@ -50,8 +50,21 @@ function validateRegister() {
             console.error("Error registering user:", error);
         }
     });
+
 }
-function validatePassword(password) {
+function validInformation(){
+    if(document.getElementById("personalForm").checkValidity()){
+        document.getElementById('personal-tab').classList.remove('active');
+        document.getElementById('account-tab').classList.add('active');
+        document.getElementById("personal").classList.remove("show", "active");
+        document.getElementById("account").classList.add("show", "active");
+
+    } else{
+        document.getElementById("personalForm").reportValidity();
+    }
+}
+
+function validPassword(password) {
     const passwordRegex = '/^(?=.*[A-Z])(?=.*[0-9])(?=.*[-_!@#?¿!¡\$%\^&\*]).{6,}$/';
     if (passwordRegex.test(password) === false) {
         alert("Password must contain at least one uppercase letter, one number, or one special character");
@@ -60,5 +73,12 @@ function validatePassword(password) {
     // Si todos los campos están llenos, redirigir al usuario a la página de inicio de sesión
     window.location.href = "../HTML/Template/Login.html";
     return true;
+}
+
+function goBack() {
+    document.getElementById('account-tab').classList.remove('active');
+    document.getElementById('personal').classList.add('active');
+    document.getElementById("account").classList.remove("show", "active");
+    document.getElementById("personal").classList.add("show", "active");
 }
 
