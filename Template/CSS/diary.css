@@ -1,3 +1,17 @@
+    *{
+        font-family: Bricolage Grotesque, Arial;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+
+    main {
+        flex:1;
+        width: 100%;
+    }
+
 
 
     .day, .newDay {
@@ -5,6 +19,8 @@
         position: relative;
         font-size: 1.3em;
     }
+
+
 
     .dayText, .dayExercises, .newDayText {
         font-size: 1em;

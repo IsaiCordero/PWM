@@ -66,3 +66,14 @@ select {
     height: 3em; /* Adjust height as needed */
     resize: both; /*Horizontal and vertical resizing*/
 }
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex:1;
+    width: 100%;
+}

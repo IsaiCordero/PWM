@@ -1,3 +1,7 @@
+*{
+    font-family: Bricolage Grotesque, Arial;
+}
+
 body{
     display: flex;
     flex-direction: column; /* Set flex direction to column to fit containers */
@@ -5,6 +9,12 @@ body{
     margin: 0; /* Remove default margin for better fit */
     flex-grow: 1;
     font-family: Bricolage Grotesque, Arial;
+
+}
+
+main {
+    flex:1;
+    width: 100%;
 }
 
 header{
@@ -124,3 +134,11 @@ header{
     font-size: 24px;
     color: white;
 }
+#centeredContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
