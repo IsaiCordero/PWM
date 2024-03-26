@@ -10,7 +10,7 @@ body{
 }
 
 .divExercises figcaption {
-    font-size: 30px;
+    font-size: 2em;
     color: black;
     font-weight: bold;
 }
@@ -131,4 +131,6 @@ body{
     height: 40px; /* Ajusta la altura del campo de entrada */
     margin-bottom: 0.8em; /* Ajusta el margen inferior entre los elementos */
     margin-top: -1em;
+}
+@media only screen and(max-width: 438px){
 }
