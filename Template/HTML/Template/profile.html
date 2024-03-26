@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../CSS/landingPage.css">
-    <link rel="stylesheet" href="../../CSS/homePage.css">
     <link rel="stylesheet" href="../../CSS/profile.css">
+    <link rel="stylesheet" href="../../CSS/landingPage.css">
     <script src="../../JavaScript/xlu-include-file.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../../JavaScript/sessionStorageUtils.js"></script>
@@ -45,17 +44,27 @@
                             <img id="editCredentials" src="../../images/icons/edit_icon.svg">
                         </h2>
                     </header>
-                    <form class="emailPasswordChange">
-                        <ul class="userCredentialsList">
-                            <li><strong>Username: </strong><span id="username">username1</span></li>
-                            <li><strong>Email: </strong><span id="email">user@email.com</span></li>
-                        </ul>
-                        <form>
-                            <div>
-                                <label></label>
-                                <input>
-                            </div>
-                        </form>
+                    <ul class="userCredentialsList">
+                        <li><strong>Username: </strong><span id="username">username1</span></li>
+                        <li><strong>Email: </strong><span id="email">user@email.com</span></li>
+                    </ul>
+                    <form class="changeCredentials" style="display: none">
+                        <div class="changeFieldContainer">
+                            <input type="text" id="changeEmail" placeholder=" " name="email" required>
+                            <label for="changeEmail">Email</label>
+                        </div>
+                        <div class="changeFieldContainer">
+                            <input type="password" id="newPassword" placeholder=" " name="newPassword" required>
+                            <label for="newPassword">New password</label>
+                        </div>
+                        <div class="changeFieldContainer">
+                            <input type="password" id="confirmPassword" placeholder=" " name="confirmPassword" required>
+                            <label for="confirmPassword">Confirm password</label>
+                        </div>
+                        <div class="submitCancelForm">
+                            <input id="saveChangesButton" type="submit" value="Save">
+                            <input id="cancelButton" type="button" value="Cancel">
+                        </div>
                     </form>
                 </section>
             </section>
