@@ -5,7 +5,7 @@
     .day, .newDay {
         margin-top: 1.5em;
         position: relative;
-        font-size: 125%;
+        font-size: 1.3em;
     }
 
     .dayText, .dayExercises, .newDayText {
@@ -47,8 +47,17 @@
         top: 1em;
     }
 
+    @keyframes parpadeo {
+        0% { background-color: white; }
+        25% { background-color: white; } /* Mantiene el color blanco por más tiempo */
+        50% { background-color: rgba(201, 184, 249, 0.69); } /* Inicia la transición hacia el color rgba */
+        75% { background-color: rgba(201, 184, 249, 0.69); } /* Mantiene el color rgba */
+        100% { background-color: white; } /* Completa la transición al color blanco */
+    }
+
+
     .newDay {
-        background-color: #F1DDD9;
+        animation: parpadeo 4s; /* Aplica la animación al contenedor .day */
     }
 
     .weekPlan {
@@ -101,7 +110,7 @@
     }
 
     .monday {
-        background-color: rgba(201, 184, 249, 0.69);
+        animation: parpadeo 4s infinite;
     }
 
 @media only screen and (max-width: 1200px) {
