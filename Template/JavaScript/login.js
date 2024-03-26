@@ -5,6 +5,9 @@ loginButton.addEventListener("click", function(event){
     validateCredentials();
 });
 function validateCredentials() {
+
+
+
     $.ajax({
         url: "http://localhost:3000/users",
         type: "GET",
@@ -17,6 +20,7 @@ function validateCredentials() {
                 // Credentials match
                 if(user.email === email && user.password === password){
                     const informationToUse = {
+                        "username": user.username,
                         "name" : user.name,
                         "surname1" : user.surname1,
                         "surname2" : user.surname2,

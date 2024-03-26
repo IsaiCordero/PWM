@@ -8,26 +8,29 @@
     <title>List of exercises</title>
     <script src="../../JavaScript/xlu-include-file.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../JavaScript/showExercise.js"></script>
+    <script src="../../JavaScript/sessionStorageUtils.js"></script>
+    <script src="../../JavaScript/showWorkout.js"></script>
+
 
 
 </head>
 <body>
-    <header class = "header" xlu-include-file="header.html">
-    </header>
-    <main class="exercisesDisplay">
-        <header class="exercises">
-            <h1 id="headerExercises">
-                Your Exercises
-            </h1>
-        </header>
-        <section class = addYourExerciseDynamic>
-            <section id="addYourExercise" class = addYourExerciseDynamic>
+<header class = "header" xlu-include-file="header.html">
+</header>
+<main class="exercisesDisplay">
+    <header class="exercises">
+        <h1 id="headerExercises">
 
-            </section>
+        </h1>
+    </header>
+    <section class = addYourExercise>
+        <section id="addYourExercise">
+
         </section>
-    </main>
-    <footer xlu-include-file="footer.html"></footer>
+        <p xlu-include-file="addExercise.html"></p>
+    </section>
+</main>
+<footer xlu-include-file="footer.html"></footer>
 
 </body>
 

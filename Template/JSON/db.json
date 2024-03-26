@@ -52,26 +52,75 @@
       "id": 1,
       "photo": "../../images/press-banca.webp",
       "name": "Bench Press",
-      "related_to_database": false
+      "related_to_database": true
     },
     {
       "id": 2,
       "photo": "../../images/chestDay.png",
       "name": "Incline Bench Press",
-      "related_to_database": false
+      "related_to_database": true
     },
     {
       "id": 3,
       "photo": "../../images/seated-chest-press.png",
       "name": "Seated Press",
-      "related_to_database": false
+      "related_to_database": true
     },
     {
       "id": 4,
       "photo": "../../images/leg-press-icon.webp",
       "name": "Leg Press",
-      "related_to_database": false
+      "related_to_database": true
+    },
+    {
+      "id": 5,
+      "photo": "../../images/pushup-icon.png",
+      "name": "Pushups",
+      "related_to_database": true
+    },
+    {
+      "id": 6,
+      "photo": "../../images/leg-curl.png",
+      "name": "Leg Curl",
+      "related_to_database": true
+    },
+    {
+      "id": 7,
+      "photo": "../../images/calf-raises.png",
+      "name": "Calf Raises",
+      "related_to_database": true
+    },
+    {
+      "id": 8,
+      "photo": "../../images/abductors.webp",
+      "name": "Abductors",
+      "related_to_database": true
+    },
+    {
+      "id": 9,
+      "photo": "../../images/hip-thrust.webp",
+      "name": "Hip Thrust",
+      "related_to_database": true
+    },
+    {
+      "id": 10,
+      "photo": "../../images/pullups.png",
+      "name": "Pull Ups",
+      "related_to_database": true
+    },
+    {
+      "id": 11,
+      "photo": "../../images/seated-row.webp",
+      "name": "Seated Row",
+      "related_to_database": true
+    },
+    {
+      "id": 12,
+      "photo": "../../images/lat-pulldown.webp",
+      "name": "Lat Pulldown",
+      "related_to_database": true
     }
+
   ], "user_workouts": [
   {
     "username": "viera21",
@@ -82,42 +131,162 @@
     "workout_id": 2
   },
   {
-    "username": "viera21",
+    "username": "mireBel",
     "workout_id": 3
   },
   {
-    "username": "viera21",
+    "username": "mireBel",
     "workout_id": 4
   }
 ], "workouts": [
   {
     "workout_id": 1,
-    "exercise1_id": 1,
+    "name": "Leg Workout",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 4,
+        "N_series": 4
+
+      },
+      {
+        "exercise_id": 6,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 7,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 8,
+        "N_series": 4
+      }
+    ]
+  },
+  {
+    "workout_id": 2,
+    "name": "Chest Workout",
     "rest_time": 60,
-    "series": [
+    "N_exercises": 4,
+    "exercises": [
       {
         "exercise_id": 1,
-        "series_number": 1,
-        "repetitions": 12,
-        "weight": 20
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
       },
       {
-        "exercise_id": 1,
-        "series_number": 2,
-        "repetitions": 10,
-        "weight": 25
+        "exercise_id": 2,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+
       },
       {
-        "exercise_id": 1,
-        "series_number": 2,
-        "repetitions": 10,
-        "weight": 30
+        "exercise_id": 3,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
       },
       {
-        "exercise_id": 1,
-        "series_number": 2,
-        "repetitions": 8,
-        "weight": 35
+        "exercise_id": 5,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+      }
+    ]
+  }, {
+    "workout_id": 3,
+    "name": "Upper Body",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 3,
+        "N_series": 4
+
+      },
+      {
+        "exercise_id": 10,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 11,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 12,
+        "N_series": 4
+      }
+    ]
+  }, {
+    "workout_id": 4,
+    "name": "Lower Body",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 4,
+        "N_series": 4
+
+      },
+      {
+        "exercise_id": 6,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 7,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 8,
+        "N_series": 4
       }
     ]
   }

@@ -3,7 +3,6 @@ $(document).ready(function() {
     $.getJSON('http://localhost:3000/exercises', function(data) {
         // Obtener la lista de ejercicios del JSON
         var exercises = data;
-        console.log(exercises);
         exercises.forEach(function(exercises){
 
             $.ajax({
