@@ -7,6 +7,7 @@ $(document).ready(function() {
     $.getJSON('http://localhost:3000/workouts', function(workouts) {
         workouts.forEach(function (workout){
             if(JSON.stringify(workout.workout_id) === workoutId) {
+                
                 $('#headerExercises').text(workout.name);
                 workout.exercises.forEach(function (userExercise){
                     // Cargar el archivo JSON de exercises utilizando $.ajax()
@@ -16,7 +17,8 @@ $(document).ready(function() {
                         dataType: 'json',
                         success: function(exercises) {
                             exercises.forEach(function(exercise){
-                                if(JSON.stringify(userExercise.exercise_id) === exercise.id) {
+                                if(JSON.stringify(userExercise.exercise_id) === JSON.stringify(exercise.id)) {
+
                                     $.ajax({
                                         url: 'exercise.html',
                                         dataType:'html',
@@ -27,7 +29,7 @@ $(document).ready(function() {
                                             newExercise.find('.pectoralImagen').attr('alt', 'Imagen de ' + exercise.name);
                                             $('#addYourExercise').append(newExercise);
                                         }
-                                    });
+                                    })
                                 }
                             });
                         },
