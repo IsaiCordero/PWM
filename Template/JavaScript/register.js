@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function(){
     const registerButton = document.querySelector(".register-button");
     if(registerButton){
