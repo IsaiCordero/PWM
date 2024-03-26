@@ -1,12 +1,12 @@
 
 
-    .day1, .day2, .day3, .newDay {
+    .day, .newDay {
         margin-top: 1.5em;
         position: relative;
         font-size: 1.3em;
     }
 
-    .day1Text, .day1Exercises, .day2Text, .day2Exercises, .day3Text, .day3Exercises, .newDayText {
+    .dayText, .dayExercises, .newDayText {
         font-size: 1em;
         position: absolute;
     }
@@ -19,18 +19,18 @@
         margin-left: 1.3em;
     }
 
-    .day1Circle, .day2Circle, .day3Circle {
+    .dayCircle {
         font-size: 1em;
         color: black;
     }
 
-    .day1Bars, .day2Bars, .day3Bars {
+    .dayBars {
         font-size: 0.5em;
         margin-left: 1em;
 
     }
 
-    .day1Text, .day2Text, .day3Text {
+    .dayText {
         left: 8em;
         top: 1em;
     }
@@ -40,13 +40,22 @@
         top: 1.5em;
     }
 
-    .day1Exercises, .day2Exercises, .day3Exercises {
-        right: 5em;
+    .dayExercises {
+        left: 80%;
         top: 1em;
     }
 
+    @keyframes parpadeo {
+        0% { background-color: white; }
+        25% { background-color: white; } /* Mantiene el color blanco por más tiempo */
+        50% { background-color: rgba(201, 184, 249, 0.69); } /* Inicia la transición hacia el color rgba */
+        75% { background-color: rgba(201, 184, 249, 0.69); } /* Mantiene el color rgba */
+        100% { background-color: white; } /* Completa la transición al color blanco */
+    }
+
+
     .newDay {
-        background-color: #F1DDD9;
+        animation: parpadeo 4s; /* Aplica la animación al contenedor .day */
     }
 
     .weekPlan {
@@ -90,131 +99,63 @@
         font-size: 1.25em;
     }
 
-    .monday {
-        background-color: rgba(201, 184, 249, 0.69);
+    .workoutList {
+        display: inline-block;
+
     }
 
-@media only screen and (max-width: 1200px){
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        flex-basis: 4em;
-        padding: 1.6em;
+    .workoutPlan {
+        margin-top: 10%;
     }
-}
-@media only screen and (max-width: 1100px) {
+
+    .monday {
+        animation: parpadeo 4s infinite;
+    }
+
+@media only screen and (max-width: 1270px) {
     .sunday {
         display: none;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1104px) {
     .saturday{
         display: none;
     }
-}
-@media only screen and (max-width: 900px){
-    .day1, .day2, .day3, .newDay {
-        font-size: 1.2em;
-    }
     .weekPlan {
-        width: 20em;
-        top: 20em;
         left: 40%;
-        position: absolute;
     }
+}
+@media only screen and (max-width: 935px){
     .friday{
         display: none;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
     .thursday{
         display: none;
     }
-    .divWeekPlan {
-        padding: 3em 2em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        flex-basis: 4em;
-        height: 6em;
-        padding: 2em;
-        font-size: 1.2em;
-    }
-    .divWeekPlan img {
-        height: 4em;
-    }
-    .weekPlan{
-        font-size: 1.35em;
-        top: 22em;
-        left: 40%;
+    .weekPlan {
+        left: 38%;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .wednesday{
         display: none;
     }
-    .divWeekPlan {
-        padding: 4em 5em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 1.2em;
-    }
-    .weekPlan{
-        left: 37%;
+    .weekPlan {
+        left: 35%;
     }
 }
-@media only screen and (max-width: 600px){
-    .day1, .day2, .day3, .newDay {
-        font-size: 1em;
-    }
-    .day1Exercises, .day2Exercises, .day3Exercises {
-        font-size: 0.8em;
-        top: 1.5em;
-    }
-    .divWeekPlan {
-        padding: 4em 5em;
+@media only screen and (max-width: 450px) {
+    .dayExercises {
+        top: 70%;
+        left: 40%;
+        font-size: 90%;
     }
     .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
         font-size: 1em;
     }
-    .divWeekPlan img {
-        height: 4em;
-    }
-    .weekPlan{
-        font-size: 1.2em;
-        left: 36%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .day1Exercises, .day2Exercises, .day3Exercises {
-        right: 4em;
-    }
-    .divWeekPlan {
-        padding: 4em 5em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 1em;
-    }
-    .divWeekPlan img {
-        height: 4em;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .day1Exercises, .day2Exercises, .day3Exercises {
-        font-size: 0.75em;
-        top: 2.75em;
-        left: 11em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 0.8em;
-    }
-    .weekPlan{
-        left: 33%;
-    }
-}
-@media only screen and (max-width: 300px){
-    .day1Exercises, .day2Exercises, .day3Exercises {
-        top: 4em;
-        left: 16.5em;
-        font-size: 0.5em;
+    .weekPlan {
+        left: 30%;
     }
 }

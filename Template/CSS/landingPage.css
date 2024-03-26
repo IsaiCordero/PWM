@@ -105,18 +105,11 @@ label {
     font-weight: bold;
 }
 
-.button-login {
-    margin: 0 auto;
-    margin-top: 1.5em;
-    width: 100px;
-    height: 25px;
-    margin-bottom: 40px;
-}
 .sets {
     display: flex;
     flex-direction: column;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 0.5em;
 }
 .repsSet {
     position: relative;
@@ -124,7 +117,8 @@ label {
 
 }
 .imageExerciseByMuscle{
-    display: flex;
+    margin-top: 2em;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -212,7 +206,6 @@ label {
 
 .form_login {
     margin-top: 50px;
-    background-color: #F1DDD9;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -241,5 +234,110 @@ body{
 .errorMessage{
     color: red;
     margin-top: 1.5em;
+}
+.addExerciseForm {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name_input {
+    width: 300px; /* Puedes ajustar este valor según sea necesario */
+    height: 40px; /* Puedes ajustar este valor según sea necesario */
+    font-size: 18px; /* Puedes ajustar este valor según sea necesario */
+    margin-top: -2em;
+}
+
+.nameContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titleContainer {
+
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#inputName {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: -15.5em;
+}
+
+.setFormulary {
+    text-align: left;
+    margin-top: 0.2em;
+}
+
+.titleContainer strong {
+    margin-left:-9em;
+    font-size: 30px; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: -0.5em;
+    margin-right: 0.5em;
+}
+
+.inputName1 {
+    font-size: 18px; /* Ajusta el tamaño de la fuente del campo de entrada */
+    width: 80%; /* Ajusta el ancho del campo de entrada */
+    height: 40px; /* Ajusta la altura del campo de entrada */
+    margin-bottom: 0.8em; /* Ajusta el margen inferior entre los elementos */
+}
+
+.setsExerciseMuscle {
+    font-size: 30px; /* Ajusta el tamaño de la fuente del formulario */
+}
+
+.addExerciseForm {
+    font-size: 20px; /* Ajusta el tamaño de la fuente del formulario */
+
+}
+
+.inputName2 {
+    margin-top: -0.5em;
+    font-size: 18px; /* Ajusta el tamaño de la fuente del campo de entrada */
+    width: 80%; /* Ajusta el ancho del campo de entrada */
+    height: 40px; /* Ajusta la altura del campo de entrada */
+    margin-bottom: 1em;
+
+
+}
+
+.inputReps {
+    width: 10%;
+    height: 1.5em;
+
+}
+
+.legExtensionImage {
+    margin-left: -2em;
+}
+
+.addNewExercise {
+    width: 40%;
+
+}
+
+.inline {
+    display: inline;
+}
+
+.addSet{
+    margin-top: 1em;
+    width: 20%;
+
+}
+
+.removeSet{
+    margin-top: 1em;
+    width: 20%;
+    height: 10%;
+
 }
 

@@ -5,17 +5,22 @@ loginButton.addEventListener("click", function(event){
     validateCredentials();
 });
 function validateCredentials() {
+
+
+
     $.ajax({
         url: "http://localhost:3000/users",
         type: "GET",
         dataType: "json",
         success: function (jsonData){
+            console.log(jsonData);
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
             for(const user of jsonData){
                 // Credentials match
                 if(user.email === email && user.password === password){
                     const informationToUse = {
+                        "username": user.username,
                         "name" : user.name,
                         "surname1" : user.surname1,
                         "surname2" : user.surname2,

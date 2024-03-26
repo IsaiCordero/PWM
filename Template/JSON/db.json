@@ -1,49 +1,358 @@
 {
   "users": [
     {
-      "user_id": "1",
-      "username": "gymDiaryUser",
-      "password": "prueba",
-      "email": "gymdiaryuser@email.com",
-      "name": "Name",
-      "surname1": "Surname1",
-      "surname2": "Surname2",
-      "birthdate": "2001-06-05",
-      "height(cm)": "1,95m",
-      "weight(kg)": "95kg",
-      "gender": "Other",
+      "user_id" : "1",
+      "username" : "gymDiaryUser",
+      "password" : "prueba",
+      "email" : "gymdiaryuser@email.com",
+      "name" : "Name",
+      "surname1" : "Surname1",
+      "surname2" : "Surname2",
+      "birthdate" : "2001-06-05",
+      "height(cm)" : "195",
+      "weight(kg)" : "95",
+      "gender" : "Other",
       "profile_picture": null,
       "id": "2168"
     },
     {
-      "user_id": "2",
-      "username": "viera21",
-      "password": "prueba2",
-      "email": "viera21@email.com",
-      "name": "Jonathan",
-      "surname1": "Viera",
-      "surname2": null,
-      "birthdate": "1989-10-21",
-      "height": "1,71m",
-      "weight": "75kg",
-      "gender": "Male",
+      "user_id" : "2",
+      "username" : "viera21",
+      "password" : "prueba2",
+      "email" : "viera21@email.com",
+      "name" : "Jonathan",
+      "surname1" : "Viera",
+      "surname2" : null,
+      "birthdate" : "1989-10-21",
+      "height(cm)" : "171",
+      "weight(kg)" : "75",
+      "gender" : "Male",
       "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
       "id": "8da4"
     },
     {
-      "user_id": "3",
-      "username": "mireBel",
-      "password": "prueba3",
-      "email": "mireiabelmonte@email.com",
-      "name": "Mireia",
-      "surname1": "Belmonte",
-      "surname2": "García",
-      "birthdate": "1990-11-10",
-      "height": "1,70cm",
-      "weight": "65kg",
-      "gender": "Female",
+      "user_id" : "3",
+      "username" : "mireBel",
+      "password" : "prueba3",
+      "email" : "mireiabelmonte@email.com",
+      "name" : "Mireia",
+      "surname1" : "Belmonte",
+      "surname2" : "García",
+      "birthdate" : "1990-11-10",
+      "height(cm)" : "170",
+      "weight(kg)" : "65",
+      "gender" : "Female",
       "profile_picture": null,
       "id": "402e"
     }
-  ]
+  ],
+
+  "exercises": [
+    {
+      "id": 1,
+      "photo": "../../images/press-banca.webp",
+      "name": "Bench Press",
+      "related_to_database": true,
+      "creator": "viera21"
+    },
+    {
+      "id": 2,
+      "photo": "../../images/chestDay.png",
+      "name": "Incline Bench Press",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 3,
+      "photo": "../../images/seated-chest-press.png",
+      "name": "Seated Press",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 4,
+      "photo": "../../images/leg-press-icon.webp",
+      "name": "Leg Press",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 5,
+      "photo": "../../images/pushup-icon.png",
+      "name": "Pushups",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 6,
+      "photo": "../../images/leg-curl.png",
+      "name": "Leg Curl",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 7,
+      "photo": "../../images/calf-raises.png",
+      "name": "Calf Raises",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 8,
+      "photo": "../../images/abductors.webp",
+      "name": "Abductors",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 9,
+      "photo": "../../images/hip-thrust.webp",
+      "name": "Hip Thrust",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    },
+    {
+      "id": 10,
+      "photo": "../../images/pullups.png",
+      "name": "Pull Ups",
+      "related_to_database": false,
+      "creator": "mireBel"
+    },
+    {
+      "id": 11,
+      "photo": "../../images/seated-row.webp",
+      "name": "Seated Row",
+      "related_to_database": true,
+      "creator": "mireBel"
+    },
+    {
+      "id": 12,
+      "photo": "../../images/lat-pulldown.webp",
+      "name": "Lat Pulldown",
+      "related_to_database": true,
+      "creator": "GymDiary"
+    }
+
+  ], "user_workouts": [
+  {
+    "username": "viera21",
+    "workout_id": 1,
+    "day": "1"
+  },
+  {
+    "username": "viera21",
+    "workout_id": 2,
+    "day": "3"
+  },
+  {
+    "username": "mireBel",
+    "workout_id": 3,
+    "day": "1"
+  },
+  {
+    "username": "mireBel",
+    "workout_id": 4,
+    "day": "3"
+  }
+], "workouts": [
+  {
+    "workout_id": 1,
+    "name": "Leg Workout",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 4,
+        "N_series": 4
+
+      },
+      {
+        "exercise_id": 6,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 7,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 8,
+        "N_series": 4
+      }
+    ]
+  },
+  {
+    "workout_id": 2,
+    "name": "Chest Workout",
+    "rest_time": 60,
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 1,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+      },
+      {
+        "exercise_id": 2,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+
+      },
+      {
+        "exercise_id": 3,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+      },
+      {
+        "exercise_id": 5,
+        "N_series": 4,
+        "sets": [
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          },
+          {
+            "reps": 8,
+            "weight": "20kg"
+          }
+        ]
+      }
+    ]
+  }, {
+    "workout_id": 3,
+    "name": "Upper Body",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 3,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 10,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 11,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 12,
+        "N_series": 4
+      }
+    ]
+  }, {
+    "workout_id": 4,
+    "name": "Lower Body",
+    "N_exercises": 4,
+    "exercises": [
+      {
+        "exercise_id": 4,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 6,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 7,
+        "N_series": 4
+      },
+      {
+        "exercise_id": 8,
+        "N_series": 4
+      }
+    ]
+  }
+], "user_exercises": [
+  {
+  "username": "viera21",
+  "exercise_id": 4
+},{
+  "username": "viera21",
+  "exercise_id": 6
+},{
+  "username": "viera21",
+  "exercise_id": 7
+},{
+  "username": "viera21",
+  "exercise_id": 8
+},{
+  "username": "viera21",
+  "exercise_id": 1
+},{
+  "username": "viera21",
+  "exercise_id": 2
+},{
+  "username": "viera21",
+  "exercise_id": 3
+},{
+  "username": "viera21",
+  "exercise_id": 5
+},{
+    "username": "mireBel",
+    "exercise_id": 3
+  },{
+    "username": "mireBel",
+    "exercise_id": 10
+  },{
+    "username": "mireBel",
+    "exercise_id": 11
+  },{
+    "username": "mireBel",
+    "exercise_id": 12
+  },{
+    "username": "mireBel",
+    "exercise_id": 4
+  },{
+    "username": "mireBel",
+    "exercise_id": 6
+  },{
+    "username": "mireBel",
+    "exercise_id": 7
+  },{
+    "username": "mireBel",
+    "exercise_id": 8
+  }
+]
 }
