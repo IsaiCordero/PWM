@@ -3,7 +3,7 @@
     .day, .newDay {
         margin-top: 1.5em;
         position: relative;
-        font-size: 1.3em;
+        font-size: 125%;
     }
 
     .dayText, .dayExercises, .newDayText {
@@ -41,7 +41,7 @@
     }
 
     .dayExercises {
-        right: 5em;
+        left: 80%;
         top: 1em;
     }
 
@@ -96,133 +96,57 @@
     }
 
     .workoutPlan {
-        margin-top: 11em;
+        margin-top: 10%;
     }
 
     .monday {
         background-color: rgba(201, 184, 249, 0.69);
     }
 
-@media only screen and (max-width: 1200px){
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        flex-basis: 4em;
-        padding: 1.6em;
-    }
-}
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1270px) {
     .sunday {
         display: none;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1104px) {
     .saturday{
         display: none;
     }
-}
-@media only screen and (max-width: 900px){
-    .day, .newDay {
-        font-size: 1.2em;
-    }
     .weekPlan {
-        width: 20em;
-        top: 20em;
         left: 40%;
     }
+}
+@media only screen and (max-width: 935px){
     .friday{
         display: none;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
     .thursday{
         display: none;
     }
-    .divWeekPlan {
-        padding: 3em 2em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        flex-basis: 4em;
-        height: 6em;
-        padding: 2em;
-        font-size: 1.2em;
-    }
-    .divWeekPlan img {
-        height: 4em;
-    }
-    .weekPlan{
-        font-size: 1.35em;
-        top: 22em;
-        left: 40%;
+    .weekPlan {
+        left: 38%;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .wednesday{
         display: none;
     }
-    .divWeekPlan {
-        padding: 4em 5em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 1.2em;
-    }
-    .weekPlan{
-        left: 37%;
+    .weekPlan {
+        left: 35%;
     }
 }
-@media only screen and (max-width: 600px){
-    .day, .newDay {
-        font-size: 1em;
-    }
+@media only screen and (max-width: 450px) {
     .dayExercises {
-        font-size: 0.8em;
-        top: 1.5em;
-    }
-    .divWeekPlan {
-        padding: 4em 5em;
+        top: 70%;
+        left: 40%;
+        font-size: 90%;
     }
     .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
         font-size: 1em;
     }
-    .divWeekPlan img {
-        height: 4em;
-    }
-    .weekPlan{
-        font-size: 1.2em;
-        left: 36%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .dayExercises {
-        right: 4em;
-    }
-    .divWeekPlan {
-        padding: 4em 5em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 1em;
-    }
-    .divWeekPlan img {
-        height: 4em;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .dayExercises {
-        font-size: 0.75em;
-        top: 2.75em;
-        left: 11em;
-    }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 0.8em;
-    }
-    .weekPlan{
-        left: 33%;
-    }
-}
-@media only screen and (max-width: 300px){
-    .dayExercises {
-        top: 4em;
-        left: 16.5em;
-        font-size: 0.5em;
+    .weekPlan {
+        left: 30%;
     }
 }
