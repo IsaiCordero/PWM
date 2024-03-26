@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-<<<<<<< HEAD
-    <file url="file://$PROJECT_DIR$" libraries="{jquery-3.6.3}" />
-=======
-    <file url="file://$PROJECT_DIR$" libraries="{bootstrap, font-awesome, jquery}" />
->>>>>>> af67d39403bb1ffb7664df753e610705411418d7
+    <file url="file://$PROJECT_DIR$" libraries="{bootstrap, font-awesome, jquery-3.6.3}" />
   </component>
 </project>
