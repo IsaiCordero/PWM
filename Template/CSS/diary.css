@@ -1,4 +1,6 @@
-
+*:not(input){
+    user-select: none;
+}
 
     .day, .newDay {
         margin-top: 1.5em;
@@ -32,12 +34,12 @@
 
     .dayText {
         left: 8em;
-        top: 1em;
+        top: 20%;
     }
 
     .newDayText {
         left: 8em;
-        top: 1.5em;
+        top: 25%;
     }
 
     .dayExercises {
@@ -59,7 +61,7 @@
     }
 
     .weekPlan {
-        font-size: 1.55em;
+        font-size: 1.5em;
         color: darkblue;
         font-weight: bold;
         top: 18em;
@@ -68,8 +70,7 @@
     }
 
     .divWeekPlan {
-        height: 40%;
-        padding: 3.5em 3em;
+        padding: 3.5em 1em;
         justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
@@ -90,7 +91,7 @@
     .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
 
         flex-basis: 5em;
-        height: 7em;
+        height: 12em;
         padding: 1.55em;
         border-style: solid;
         border-color: black;
@@ -112,12 +113,12 @@
         animation: parpadeo 4s infinite;
     }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1200px) {
     .sunday {
         display: none;
     }
 }
-@media only screen and (max-width: 1104px) {
+@media only screen and (max-width: 1200px) {
     .saturday{
         display: none;
     }
@@ -125,7 +126,7 @@
         left: 40%;
     }
 }
-@media only screen and (max-width: 935px){
+@media only screen and (max-width: 993px){
     .friday{
         display: none;
     }
@@ -138,7 +139,7 @@
         left: 38%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 527px) {
     .wednesday{
         display: none;
     }
@@ -148,12 +149,12 @@
 }
 @media only screen and (max-width: 450px) {
     .dayExercises {
-        top: 70%;
+        top: 60%;
         left: 40%;
         font-size: 90%;
     }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
-        font-size: 1em;
+    .dayText{
+        top: 20%;
     }
     .weekPlan {
         left: 30%;
