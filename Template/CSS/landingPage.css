@@ -105,13 +105,6 @@ label {
     font-weight: bold;
 }
 
-.button-login {
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 100px;
-    height: 25px;
-    margin-bottom: 40px;
-}
 .sets {
     display: flex;
     flex-direction: column;
@@ -227,15 +220,9 @@ label {
     margin-top: 40px;
 }
 .password {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-.errorMessage{
-    height: fit-content;
-    margin-top: 0.5em;
-    font-size: 0.85em;
-    color: red;
-}
 body{
     display: flex;
     flex-direction: column;
@@ -245,6 +232,10 @@ body{
     flex: 1;
 }
 
+.errorMessage{
+    color: red;
+    margin-top: 1.5em;
+}
 .addExerciseForm {
     text-align: center;
     display: flex;

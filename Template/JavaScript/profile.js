@@ -1,7 +1,24 @@
 document.addEventListener('DOMContentLoaded', function (){
     updateUserInfo();
-    $('#editCredentials').on('click', function(){
 
+    function showForm() {
+        $('.userCredentialsList').slideUp(300, function(){
+            $('.changeCredentials').slideDown(300);
+        })
+    }
+
+    function hideForm(){
+        $('.changeCredentials').slideUp(300, function(){
+            $('.userCredentialsList').slideDown(300);
+        })
+    }
+
+    $('#editCredentials').on('click', function(){
+        showForm();
+    })
+
+    $('#cancelButton').on('click', function(){
+        hideForm();
     })
 });
 

@@ -9,6 +9,7 @@ body{
 }
 
 .profileMainContent{
+    /*margin-left: 20em;*/
     width: 100%;
     flex: 1;
 }
@@ -46,6 +47,7 @@ body{
 }
 
 .defaultH1{
+    font-family: Bricolage Grotesque, Arial;
     font-size: 3em;
 }
 
@@ -108,6 +110,91 @@ body{
     border-radius: 0.2em;
     border-width: 0.1em;
 }
+
+.changeCredentials{
+    transition: opacity 0.3s ease;
+}
+
+.changeFieldContainer{
+    position: relative;
+    margin-bottom: 0.25em;
+    height: 3.5em;
+
+    input{
+        border: 0;
+        border-bottom: 3px solid #dfdfdf;
+        outline: none;
+    }
+    label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        cursor: text;
+        transition: 0.3s ease-in-out;
+    }
+    input, label {
+        font-size: 1em;
+        width: 35%;
+        height: 3.5em;
+    }
+
+    input:focus + label,
+    input:valid + label,
+    input:not(:placeholder-shown) + .label{
+        font-size: 0.75em;
+        top: -1.75em;
+        pointer-events: none;
+    }
+
+    input:focus,
+    input:valid{
+        border-bottom: 3px solid
+    }
+}
+
+.submitCancelForm{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#saveChangesButton{
+    background: #090b85;
+    font-size: 1em;
+    color: white;
+    width: 7em;
+    height: 2em;
+    border-radius: 0.45em;
+    border-width: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#saveChangesButton:hover{
+    background: #080a45;
+}
+
+#cancelButton{
+    background: #dfdfdf;
+    font-size: 1em;
+    color: black;
+    width: 7em;
+    height: 2em;
+    border-radius: 0.45em;
+    border-width: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#cancelButton:hover{
+    background: #b7b7b7;
+}
+
 
 
 
