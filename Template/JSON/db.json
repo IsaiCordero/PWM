@@ -27,7 +27,7 @@
       "height(cm)" : "171",
       "weight(kg)" : "75",
       "gender" : "Male",
-      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
+      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.jpeg",
       "id": "8da4"
     },
     {
@@ -42,7 +42,7 @@
       "height(cm)" : "170",
       "weight(kg)" : "65",
       "gender" : "Female",
-      "profile_picture": null,
+      "profile_picture": "../../images/profilePics/profile_mireia_belmonte.avif",
       "id": "402e"
     }
   ],

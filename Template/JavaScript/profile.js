@@ -38,5 +38,6 @@ function updateUserInfo(){
     $('#height').html(userInformation.height);
     $('#weight').html(userInformation.weight);
     $('#birthdate').html(userInformation.birthdate);
-    $('#email').val(userInformation.email);
+    $('#email').html(userInformation.email);
+    $('#username').html(userInformation.username);
 }
