@@ -9,8 +9,8 @@
       "surname1" : "Surname1",
       "surname2" : "Surname2",
       "birthdate" : "2001-06-05",
-      "height(cm)" : "195",
-      "weight(kg)" : "95",
+      "height" : "195",
+      "weight" : "95",
       "gender" : "Other",
       "profile_picture": null,
       "id": "2168"
@@ -24,10 +24,10 @@
       "surname1" : "Viera",
       "surname2" : null,
       "birthdate" : "1989-10-21",
-      "height(cm)" : "171",
-      "weight(kg)" : "75",
+      "height" : "171",
+      "weight" : "75",
       "gender" : "Male",
-      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
+      "profile_picture": "../../images/profilePics/jonathan-viera.jpeg",
       "id": "8da4"
     },
     {
@@ -39,8 +39,8 @@
       "surname1" : "Belmonte",
       "surname2" : "García",
       "birthdate" : "1990-11-10",
-      "height(cm)" : "170",
-      "weight(kg)" : "65",
+      "height" : "170",
+      "weight" : "65",
       "gender" : "Female",
       "profile_picture": null,
       "id": "402e"
@@ -137,12 +137,12 @@
   {
     "username": "viera21",
     "workout_id": 1,
-    "day": "1"
+    "day": "2"
   },
   {
     "username": "viera21",
     "workout_id": 2,
-    "day": "3"
+    "day": "1"
   },
   {
     "username": "mireBel",
@@ -162,7 +162,7 @@
     "N_exercises": 4,
     "exercises": [
       {
-        "exercise_id": 4,
+        "exercise_id": 5,
         "N_series": 4
 
       },

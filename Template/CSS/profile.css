@@ -26,7 +26,7 @@ body{
 }
 
 #profilePicture{
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50%;
     padding: 1em;
     width: 23em;

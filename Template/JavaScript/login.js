@@ -31,7 +31,6 @@ function validateCredentials() {
                         "birthdate" : user.birthdate,
                         "profilePicture": user.profile_picture
                     };
-                    alert(JSON.stringify(informationToUse));
                     sessionStorage.setItem("User Information", JSON.stringify(informationToUse));
                     window.location.href = "../Template/homePage.html";
                     return true;

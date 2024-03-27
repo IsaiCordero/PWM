@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded",function() {
 
     const userInformation = getUserInformation();
     var username = userInformation.username;
@@ -19,6 +19,7 @@ $(document).ready(function() {
                                 url: 'exercise.html',
                                 dataType:'html',
                                 success: function(html) {
+
                                     var newExercise = $(html);
                                     newExercise.find('strong').text(exercise.name);
                                     newExercise.find('img').attr('src', exercise.photo);

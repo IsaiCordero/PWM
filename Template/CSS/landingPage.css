@@ -4,6 +4,10 @@
     margin-top: 0px;
 }
 
+*{
+    font-family: Bricolage Grotesque, Arial;
+}
+
 h1 {
     font-size: 2em;
     font-family: Bricolage Grotesque, serif;

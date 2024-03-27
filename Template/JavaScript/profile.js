@@ -35,8 +35,8 @@ function updateUserInfo(){
        $('.defaultH1').html(userInformation.name + " " + userInformation.surname1 + " " + userInformation.surname2);
     }
     $('#gender').html(userInformation.gender);
-    $('#height').html(userInformation.height);
-    $('#weight').html(userInformation.weight);
+    $('#height').html(userInformation.height + "cm");
+    $('#weight').html(userInformation.weight + "kg");
     $('#birthdate').html(userInformation.birthdate);
     $('#email').val(userInformation.email);
 }
