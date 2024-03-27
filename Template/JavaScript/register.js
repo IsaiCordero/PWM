@@ -1,18 +1,92 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const registerButton = document.querySelector(".register-button");
+    const form = document.querySelector(".register_data")
+    const registerButton = document.querySelector(".registerButton");
+    const nextButton = document.querySelector("#nextButton");
+    const goBackButton = document.querySelector('.btnGoBack');
+    const personalInfoTab = document.querySelector('#personal-tab');
+    const accountInfoTab = document.querySelector('#account-tab');
+
+
     if(registerButton){
-        registerButton.addEventListener("click", function(event){
+        registerButton.addEventListener("click", function(){
+            window.location.href = "../Template/login.html"
+        });
+    }
+
+    if(form){
+        form.addEventListener("submit", function(event){
             event.preventDefault();
-            validRegister();
+            if(form.checkValidity()){
+                validRegister();
+            }
+
         });
     }
     else{
         alert("Not function");
     }
-})
+    if(nextButton && accountInfoTab){
+        nextButton.addEventListener("click", function(event){
+            if ($('.personalInformation input:invalid').length === 0){
+                showAccountInformation();
+                $('#errorMessage').hide();
+            }
+            else {
+                $('#errorMessage').show();
+            }
+        });
+
+        accountInfoTab.addEventListener("click", function(){
+            if ($('.personalInformation input:invalid').length === 0){
+                showAccountInformation();
+            }
+            else {
+                $('#errorMessage').show();
+            }
+        });
+    }
+    else{
+        alert("Next button not found");
+    }
+    if(goBackButton && personalInfoTab){
+        goBackButton.addEventListener("click", function(){
+            showPersonalInformation();
+        });
+        personalInfoTab.addEventListener("click", function(){
+            showPersonalInformation();
+        });
+    }
+    else{
+        alert("Go Back button not found");
+    }
+});
+
+function showAccountInformation(){
+    //Personal info form to account info form transition
+    $('.personalInformation').slideUp(300, function(){
+        $('.accountInformation').slideDown(300);
+    });
+    //Tab transition
+    $('#personal-tab').removeClass('show active');
+    $('#account-tab').addClass('active');
+    $('#personal').removeClass('show active');
+    $('#account').addClass('show active');
+}
+
+function showPersonalInformation(){
+    //Personal info form to account info form transition
+    $('.accountInformation').slideUp(300, function(){
+        $('.personalInformation').slideDown(300);
+    });
+
+    //Tab transition
+    $('#personal-tab').addClass('show active');
+    $('#account-tab').removeClass('active');
+    $('#personal').addClass('show active');
+    $('#account').removeClass('show active');
+}
 function validRegister(){
     const userName = $("#userName").val().trim();
-    console.log(userName)
     const firstName = document.getElementById("name").value;
     const lastName = document.getElementById("lastName").value;
     const secondSurname = document.getElementById("SecondSurname").value;
@@ -35,10 +109,11 @@ function validRegister(){
         "weight(kg)": weight,
         "gender": gender
     }
-    alert(JSON.stringify(userInformation));
-    $.ajax("http://localhost:3000/users",{
+    alert("llega");
+    $.ajax({
         data: userInformation,
         type: "POST",
+        url: "http://localhost:3000/users",
         dataType: "json",
         contentType: "application/json",
         success: function (response) {
@@ -50,17 +125,6 @@ function validRegister(){
         }
     });
 
-}
-function validInformation(){
-    if(document.getElementById("personalForm").checkValidity()){
-        document.getElementById('personal-tab').classList.remove('active');
-        document.getElementById('account-tab').classList.add('active');
-        document.getElementById("personal").classList.remove("show", "active");
-        document.getElementById("account").classList.add("show", "active");
-
-    } else{
-        document.getElementById("personalForm").reportValidity();
-    }
 }
 
 function validPassword(password) {
@@ -74,10 +138,11 @@ function validPassword(password) {
     return true;
 }
 
+/*
 function goBack() {
     document.getElementById('account-tab').classList.remove('active');
     document.getElementById('personal').classList.add('active');
     document.getElementById("account").classList.remove("show", "active");
     document.getElementById("personal").classList.add("show", "active");
 }
-
+*/

@@ -238,6 +238,7 @@ body{
 .errorMessage{
     color: red;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 .addExerciseForm {
     text-align: center;
@@ -343,5 +344,25 @@ body{
     width: 20%;
     height: 10%;
 
+}
+
+.button-login {
+    background-color:  #090b85;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-filled{
+    background-color:  #090b85;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button-login:hover, .button-filled:hover {
+    color: white;
+    background: #080A45;
 }
 

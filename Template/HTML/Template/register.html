@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Tus estilos personalizados -->
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../../CSS/register.css">
-    <link rel="stylesheet" href="../../CSS/landingPage.css">
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../../JavaScript/register.js"></script>
-    <script src="xlu-include-file.js"></script>
+    <script src="../../JavaScript/xlu-include-file.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
 </head>
@@ -38,49 +38,46 @@
             <!-- Contenido de las pestañas -->
             <div class="tab-content" id="registerTabsContent">
                 <!-- Pestaña de datos personales -->
-                <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
-                    <h2 class="title_home">Personal Information</h2>
-                    <!-- Formulario de datos personales -->
-                    <form class="register_data" id="personalForm" onsubmit="return false">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Write your name" required>
+                <form class="register_data">
+                    <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                        <div class="personalInformation">
+                            <h2 class="title_home" id="personalInformationTitle">Personal Information</h2>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Write your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Write your last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birthday">Birthday</label>
+                                <input type="date" class="form-control" id="birthday" name="birthday" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="height">Height</label>
+                                <input type="text" placeholder="Write your height (cm)" id="height" name="height" required>
+                                <br><label for="weight">Weight</label>
+                                <input type="text" placeholder="Write your weight (Kg)" id="weight" name="weight" required>
+                            </div>
+                            <div id="errorMessageContainer">
+                                <p id="errorMessage" style="display: none">Error, fill in all the fields!</p>
+                            </div>
+                            <!-- Botón de navegación a la siguiente pestaña -->
+                            <button class="btn btn-block submitForm" id="nextButton" type="button">Next</button>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Write your last name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="birthday">Birthday</label>
-                            <input type="date" class="form-control" id="birthday" name="birthday" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select id="gender" name="gender" required>
-                                <option value="" disabled selected>Select</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="height">Height</label>
-                            <input type="text" placeholder="Write your height (cm)" id="height" name="height" required>
-                            <br><label for="weight">Weight</label>
-                            <input type="text" placeholder="Write your weight (Kg)" id="weight" name="weight" required>
-                        </div>
-                        <!-- Botón de navegación a la siguiente pestaña -->
-                        <button class="btn button-filled btn-block" type="button" onclick="validInformation()">Next</button>
-                    </form>
-                </div>
-                <!-- Pestaña de datos de cuenta -->
-                <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
-                    <h2 class="title_home">Account Information</h2>
-                    <!-- Formulario de datos de cuenta -->
-                    <form class="register_data" onsubmit="return validRegister()">
-
+                    </div>
+                    <div class="accountInformation" style="display: none">
+                        <h2 class="title_home" id="accountInformationTitle">Account Information</h2>
                         <div class="form-group">
                             <label for="userName">Username</label>
                             <input type="text" id="userName" placeholder="Write your username" name="userName" required>
@@ -95,11 +92,11 @@
                         </div>
                         <!-- Botón de submit para enviar el formulario -->
                         <div class="form-group text-center">
-                            <input class="btn button-filled register-button btn-block" type="submit" value="Register">
-                            <button class="btn no-filled btnGoBack" onclick="return goBack()">Back</button>
+                            <input class="btn btn-block submitForm registerButton" type="submit" value="Register">
+                            <button class="btn btn-block btnGoBack">Back</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </section>
     </div>

@@ -27,7 +27,7 @@
       "height" : "171",
       "weight" : "75",
       "gender" : "Male",
-      "profile_picture": "../../images/profilePics/jonathan-viera.jpeg",
+      "profile_picture": "../../images/profilePics/profile_Jonathan_Viera.webp",
       "id": "8da4"
     },
     {
@@ -42,7 +42,7 @@
       "height" : "170",
       "weight" : "65",
       "gender" : "Female",
-      "profile_picture": null,
+      "profile_picture": "../../images/profilePics/profile_mireia_belmonte.avif",
       "id": "402e"
     }
   ],
@@ -137,12 +137,12 @@
   {
     "username": "viera21",
     "workout_id": 1,
-    "day": "2"
+    "day": "1"
   },
   {
     "username": "viera21",
     "workout_id": 2,
-    "day": "1"
+    "day": "3"
   },
   {
     "username": "mireBel",
@@ -162,7 +162,7 @@
     "N_exercises": 4,
     "exercises": [
       {
-        "exercise_id": 5,
+        "exercise_id": 4,
         "N_series": 4
 
       },

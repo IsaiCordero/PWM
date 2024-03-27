@@ -1,3 +1,7 @@
+*:not(input){
+    user-select: none;
+}
+
 *{
     font-family: Bricolage Grotesque, Arial;
 }
