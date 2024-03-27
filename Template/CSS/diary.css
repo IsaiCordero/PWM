@@ -2,116 +2,117 @@
     user-select: none;
 }
 
-    .day, .newDay {
-        margin-top: 1.5em;
-        position: relative;
-        font-size: 1.3em;
-    }
+.day, .newDay {
+    margin-top: 1.5em;
+    position: relative;
+    font-size: 1.3em;
+}
 
-    .dayText, .dayExercises, .newDayText {
-        font-size: 1em;
-        position: absolute;
-    }
+.dayText, .dayExercises, .newDayText {
+    font-size: 1em;
+    position: absolute;
+}
 
-    .newDayCircle {
-        font-size: 2em;
-        color: black;
-        margin-top: 0.1em;
-        margin-bottom: 0.2em;
-        margin-left: 1.3em;
-    }
+.newDayCircle {
+    font-size: 2em;
+    color: black;
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    margin-left: 1.3em;
+}
 
-    .dayCircle {
-        font-size: 1em;
-        color: black;
-    }
+.dayCircle {
+    font-size: 1em;
+    color: black;
+}
 
-    .dayBars {
-        font-size: 0.5em;
-        margin-left: 1em;
+.dayBars {
+    font-size: 0.5em;
+    margin-left: 1em;
 
-    }
+}
 
-    .dayText {
-        left: 8em;
-        top: 20%;
-    }
+.dayText {
+    left: 8em;
+    top: 20%;
+}
 
-    .newDayText {
-        left: 8em;
-        top: 25%;
-    }
+.newDayText {
+    left: 8em;
+    top: 25%;
+}
 
-    .dayExercises {
-        left: 80%;
-        top: 1em;
-    }
+.dayExercises {
+    left: 80%;
+    top: 1em;
+}
 
-    @keyframes parpadeo {
-        0% { background-color: white; }
-        25% { background-color: white; } /* Mantiene el color blanco por más tiempo */
-        50% { background-color: rgba(201, 184, 249, 0.69); } /* Inicia la transición hacia el color rgba */
-        75% { background-color: rgba(201, 184, 249, 0.69); } /* Mantiene el color rgba */
-        100% { background-color: white; } /* Completa la transición al color blanco */
-    }
+@keyframes parpadeo {
+    0% { background-color: white; }
+    25% { background-color: white; } /* Mantiene el color blanco por más tiempo */
+    50% { background-color: rgba(201, 184, 249, 0.69); } /* Inicia la transición hacia el color rgba */
+    75% { background-color: rgba(201, 184, 249, 0.69); } /* Mantiene el color rgba */
+    100% { background-color: white; } /* Completa la transición al color blanco */
+}
 
 
-    .newDay {
-        animation: parpadeo 4s; /* Aplica la animación al contenedor .day */
-    }
+.newDay {
+    animation: parpadeo 4s; /* Aplica la animación al contenedor .day */
+}
 
-    .weekPlan {
-        font-size: 1.5em;
-        color: darkblue;
-        font-weight: bold;
-        top: 18em;
-        left: 43%;
-        position: absolute;
-    }
+.weekPlan {
+    font-size: 1.5em;
+    color: darkblue;
+    font-weight: bold;
+    top: 18em;
+    left: 43%;
+    position: absolute;
+}
 
-    .divWeekPlan {
-        padding: 3.5em 1em;
-        justify-content: space-between;
-        display: flex;
-        flex-wrap: wrap;
-        border-color: black;
-    }
+.divWeekPlan {
+    padding: 3.5em 1em;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: black;
+}
 
-    .divWeekPlan img {
-        max-width: 10em;
-        height: 4em;
-        justify-content: space-between;
-        display: block;
-        margin: 0 auto;
-        flex-basis: 1em;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-    }
+.divWeekPlan img {
+    max-width: 10em;
+    height: 4em;
+    justify-content: space-between;
+    display: block;
+    margin: 0 auto;
+    flex-basis: 1em;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
 
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
 
-        flex-basis: 5em;
-        height: 12em;
-        padding: 1.55em;
-        border-style: solid;
-        border-color: black;
-        border-radius: 0.5em;
-        text-align: center;
-        font-size: 1.25em;
-    }
+    flex-basis: 5em;
+    height: 12em;
+    padding: 1.55em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+}
 
-    .workoutList {
-        display: inline-block;
+.workoutList {
+    display: inline-block;
 
-    }
+}
 
-    .workoutPlan {
-        margin-top: 10%;
-    }
+.workoutPlan {
+    margin-top: 10%;
+}
 
-    .monday {
-        animation: parpadeo 4s infinite;
-    }
+.monday {
+    animation: parpadeo 4s infinite;
+}
 
 @media only screen and (max-width: 1200px) {
     .sunday {
