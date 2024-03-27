@@ -6,15 +6,20 @@ document.addEventListener("DOMContentLoaded", function(){
     const personalInfoTab = document.querySelector('#personal-tab');
     const accountInfoTab = document.querySelector('#account-tab');
 
+
+    if(registerButton){
+        registerButton.addEventListener("click", function(){
+            window.location.href = "../Template/login.html"
+        });
+    }
+
     if(form){
         form.addEventListener("submit", function(event){
             event.preventDefault();
             if(form.checkValidity()){
                 validRegister();
             }
-            else{
-                alert("No funca!")
-            }
+
         });
     }
     else{
