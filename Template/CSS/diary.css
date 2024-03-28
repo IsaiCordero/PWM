@@ -91,7 +91,7 @@
 }
 
 .divWeekPlan {
-    padding: 3.5em 1em;
+    padding: 3.5em 0.5em;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;

@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-
-<html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../CSS/landingPage.css">
-        <script src="../../JavaScript/xlu-include-file.js"></script>
-        <title class ="logo">GymDiary</title>
-    </head>
-    <body>
-        <header xlu-include-file="landingPageHeader.html">
-        </header>
-        <main class="defaultMain">
-            <div class = "mid_home">
-                <h1 class = "title_home">Track Your Gym Progress</h1>
-                <button class = "button-filled"  onclick="window.location.href='Register.html'">Get Started</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="logo">GymDiary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/landingPage.css">
+</head>
+<body>
+<header xlu-include-file="landingPageHeader.html">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 logoNav">
+                <h1 class="logo">GymDiary</h1>
             </div>
-            <section class = "specification">
-                <div class = "box-spec">
-                    <div  class = "sp1">
-                        <p class="p1">Some text about specification</p>
+            <div class="col-md-6 loginRegisterButtons">
 
-                    </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-                    <div class = "sp2">
-                        <p class="p2">Some text about specification</p>
-                    </div>
-
-                    <div class = "sp4">
-                        <p class="p1">Some text about specification</p>
-                    </div>
-
-                    <div class = "sp3">
-                        <p class="p2">Some text about specification</p>
-                    </div>
+<main class="defaultMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mid_home">
+                <h1 class="title_home">Track Your Gym Progress</h1>
+                <div class="mid_home">
+                    <button class="button-filled" onclick="window.location.href='Register.html'">Get Started</button>
                 </div>
-            </section>
-        </main>
-        <footer xlu-include-file="footer.html">
-        </footer>
-    </body>
+            </div>
+        </div>
+        <section class="specification">
+            <div class="box-spec">
+                <div class="sp1">
+                    <p class="p1">Some text about specification</p>
+                </div>
+                <div class="sp2">
+                    <p class="p2">Some text about specification</p>
+                </div>
+                <div class="sp4">
+                    <p class="p1">Some text about specification</p>
+                </div>
+                <div class="sp3">
+                    <p class="p2">Some text about specification</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer xlu-include-file="footer.html">
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../../JavaScript/xlu-include-file.js"></script>
+</body>
 </html>
